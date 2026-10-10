@@ -837,3 +837,9 @@ body{font-family:Roboto,Arial,sans-serif;color:var(--fr-body);background:#fff}
     }
 
 }
+
+/* ---------- About section image ---------- */
+#about .img-fluid {
+    max-width: 90%;
+    height: auto;
+}

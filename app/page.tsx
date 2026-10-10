@@ -21,6 +21,7 @@ export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "\r\n   {\r\n \"@context\":\"https://schema.org\",\r\n \"@graph\":[\r\n  {\r\n   \"@type\":\"ProfessionalService\",\r\n   \"@id\":\"https://frizendo.com/#business\",\r\n   \"name\":\"Frizendo\",\r\n   \"url\":\"https://frizendo.com/\",\r\n   \"logo\":\"https://frizendo.com/assets/frizendo-logo.png\",\r\n   \"image\":\"https://frizendo.com/assets/frizendo-logo.png\",\r\n   \"description\":\"Digital marketing agency serving Gilgit, Pakistan and international clients with SEO, Meta Ads, Google Ads, LinkedIn Ads, social media marketing, branding and web development.\",\r\n   \"founder\":{\"@type\":\"Person\",\"name\":\"Amir Hassan\"},\r\n   \"employee\":[{\"@type\":\"Person\",\"name\":\"Yasir Rahim\",\"jobTitle\":\"Co-Founder\"}],\r\n   \"areaServed\":[\"Gilgit, Pakistan\",\"Pakistan\",\"United Kingdom\",\"United States\",\"Australia\",\"Hungary\",\"Worldwide\"],\r\n   \"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Gilgit\",\"addressRegion\":\"Gilgit-Baltistan\",\"addressCountry\":\"PK\"},\r\n   \"email\":\"frizendo.com@gmail.com\",\r\n   \"telephone\":\"+923498901846\",\r\n   \"priceRange\":\"$$\",\r\n   \"serviceType\":[\"SEO\",\"Digital Marketing\",\"Meta Ads\",\"Google Ads\",\"LinkedIn Ads\",\"Social Media Management\",\"Branding\",\"Web Development\"]\r\n  },\r\n  {\r\n   \"@type\":\"WebSite\",\r\n   \"@id\":\"https://frizendo.com/#website\",\r\n   \"url\":\"https://frizendo.com/\",\r\n   \"name\":\"Frizendo\",\r\n   \"publisher\":{\"@id\":\"https://frizendo.com/#business\"},\r\n   \"inLanguage\":\"en\"\r\n  },\r\n  {\r\n   \"@type\":\"Person\",\r\n   \"@id\":\"https://frizendo.com/#amir-hassan\",\r\n   \"name\":\"Amir Hassan\",\r\n   \"jobTitle\":\"Founder\",\r\n   \"worksFor\":{\"@id\":\"https://frizendo.com/#business\"}\r\n  },\r\n  {\r\n   \"@type\":\"Person\",\r\n   \"@id\":\"https://frizendo.com/#yasir-rahim\",\r\n   \"name\":\"Yasir Rahim\",\r\n   \"jobTitle\":\"Co-Founder\",\r\n   \"worksFor\":{\"@id\":\"https://frizendo.com/#business\"}\r\n  }\r\n ]\r\n}\r\n  " }} />
+      <link rel="preload" as="image" href="/img/clients-img/hero-background.webp" type="image/webp" />
       <section className="container-fluid px-0 mb-5 hero-frizendo" id="home">
     <h1 className="visually-hidden">
       Frizendo — Digital Marketing Agency in Gilgit, Pakistan
@@ -28,7 +29,10 @@ export default function Page() {
     <div className="carousel slide" data-bs-interval={3000} data-bs-ride="carousel" id="header-carousel">
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img alt="Digital marketing strategy and growth" className="w-100 hero-img" src="/img/clients-img/hero-background.jpg" />
+          <picture>
+            <source srcSet="/img/clients-img/hero-background.webp" type="image/webp" />
+            <img alt="Digital marketing strategy and growth" className="w-100 hero-img" src="/img/clients-img/hero-background.jpg" width={1920} height={1072} fetchPriority="high" decoding="async" />
+          </picture>
           <div className="carousel-caption">
             <div className="container">
               <div className="row justify-content-start">
@@ -57,7 +61,10 @@ export default function Page() {
           </div>
         </div>
         <div className="carousel-item">
-          <img alt="Performance marketing campaigns" className="w-100 hero-img" src="/img/clients-img/hero-backround%202.jpg" />
+          <picture>
+            <source srcSet="/img/clients-img/hero-background-2.webp" type="image/webp" />
+            <img alt="Performance marketing campaigns" className="w-100 hero-img" src="/img/clients-img/hero-background-2.jpg" width={1920} height={1072} fetchPriority="low" decoding="async" />
+          </picture>
           <div className="carousel-caption">
             <div className="container">
               <div className="row justify-content-start">
@@ -490,7 +497,7 @@ export default function Page() {
       </div>
       <div className="see-more-wrap d-md-none">
         <a className="btn btn-primary rounded-pill py-3 px-5" href="/our-work">
-          See More Markets
+          See More
         </a>
       </div>
     </div>
