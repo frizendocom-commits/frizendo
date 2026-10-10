@@ -19,6 +19,9 @@ body{font-family:Roboto,Arial,sans-serif;color:var(--fr-body);background:#fff}
 .hero-frizendo .carousel-caption h1,.hero-frizendo .carousel-caption h2{font-weight:700;text-shadow:0 2px 4px rgba(0,0,0,.5)}
 .hero-frizendo .carousel-caption p{font-weight:400;line-height:1.6;text-shadow:0 2px 4px rgba(0,0,0,.5)}
 .hero-frizendo .hero-copy{padding-top:80px}
+.hero-frizendo .carousel-item.active .hero-copy{animation:frHeroIn .8s ease .1s both}
+@keyframes frHeroIn{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.hero-frizendo .carousel-item.active .hero-copy{animation:none}}
 .hero-frizendo .btn{box-shadow:none}
 .hero-frizendo .btn-primary{background:var(--fr-blue);border-color:var(--fr-blue);color:#fff}
 .hero-frizendo .btn-primary:hover,.hero-frizendo .btn-primary:focus{background:#0668d1;border-color:#0668d1;color:#fff}

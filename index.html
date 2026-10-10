@@ -138,7 +138,7 @@
    <h1 class="visually-hidden">
     Frizendo — Digital Marketing Agency in Gilgit, Pakistan
    </h1>
-   <div class="carousel slide carousel-fade" data-bs-interval="5000" data-bs-ride="carousel" id="header-carousel">
+   <div class="carousel slide" data-bs-interval="3000" data-bs-ride="carousel" id="header-carousel">
     <div class="carousel-inner">
      <div class="carousel-item active">
       <img alt="Digital marketing strategy and growth" class="w-100 hero-img" src="img/clients-img/hero-background.jpg"/>
@@ -193,20 +193,6 @@
       </div>
      </div>
     </div>
-    <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#header-carousel" type="button">
-     <span class="carousel-control-prev-icon">
-     </span>
-     <span class="visually-hidden">
-      Previous
-     </span>
-    </button>
-    <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#header-carousel" type="button">
-     <span class="carousel-control-next-icon">
-     </span>
-     <span class="visually-hidden">
-      Next
-     </span>
-    </button>
    </div>
   </section>
   <div class="container-xxl py-4">
@@ -1266,6 +1252,22 @@ Social media setup and management.
    (function(){
  document.querySelectorAll('.navbar-nav a').forEach(function(a){a.addEventListener('click',function(){var c=document.getElementById('navbarCollapse');if(c.classList.contains('show'))bootstrap.Collapse.getOrCreateInstance(c).hide()})});
 })();
+  </script>
+  <script>
+   (function () {
+    function startHero() {
+     var el = document.getElementById('header-carousel');
+     if (el && window.bootstrap && bootstrap.Carousel) {
+      var carousel = bootstrap.Carousel.getOrCreateInstance(el, { interval: 3000, ride: 'carousel', pause: false, wrap: true, touch: true });
+      carousel.cycle();
+     }
+    }
+    if (document.readyState === 'loading') {
+     document.addEventListener('DOMContentLoaded', startHero);
+    } else {
+     startHero();
+    }
+   })();
   </script>
  </body>
 </html>
