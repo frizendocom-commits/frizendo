@@ -1,0 +1,202 @@
+/* ========================================
+   ABOUT PAGE (page-scoped)
+   Loaded only for the /about route.
+   Uses existing design tokens from frizendo.css.
+======================================== */
+
+.about-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 92px 0 78px;
+  color: #fff;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(0, 198, 255, 0.2), transparent 42%),
+    radial-gradient(circle at 86% 12%, rgba(18, 198, 106, 0.16), transparent 44%),
+    linear-gradient(150deg, #092541 0%, #0d3a6b 52%, #0b63c9 100%);
+}
+
+.about-hero::after {
+  content: "";
+  position: absolute;
+  width: 460px;
+  height: 200px;
+  right: -140px;
+  top: -90px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 50%;
+  transform: rotate(-16deg);
+  pointer-events: none;
+}
+
+.about-hero > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.about-kicker {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: var(--fr-cyan);
+  font-weight: 700;
+  font-size: 0.8125rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.about-hero h1 {
+  margin-bottom: 18px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.about-lead {
+  max-width: 760px;
+  color: var(--fr-on-dark);
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+
+.about-hero .btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.about-hero .btn-outline-light:hover,
+.about-hero .btn-outline-light:focus {
+  background: #fff;
+  color: var(--fr-dark);
+  border-color: #fff;
+}
+
+.about-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 18px;
+  padding: 0;
+  list-style: none;
+  font-size: 0.875rem;
+  color: var(--fr-on-dark);
+}
+
+.about-breadcrumb a {
+  color: var(--fr-cyan);
+  text-decoration: none;
+}
+
+.about-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.about-breadcrumb li[aria-current="page"] {
+  color: #fff;
+}
+
+.about-section {
+  padding: 72px 0;
+}
+
+.about-media img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--fr-r-md);
+  box-shadow: 0 20px 55px rgba(9, 37, 65, 0.12);
+}
+
+.about-value {
+  height: 100%;
+  padding: 28px 26px;
+  border: 1px solid #e5edf5;
+  border-radius: var(--fr-r-md);
+  background: #fff;
+  box-shadow: 0 10px 35px rgba(9, 37, 65, 0.04);
+}
+
+.about-value .icon {
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+  color: var(--fr-blue);
+}
+
+.about-profile {
+  height: 100%;
+  padding: 36px 30px;
+  text-align: center;
+  border: 1px solid #e5edf5;
+  border-radius: var(--fr-r-md);
+  background: #fff;
+  box-shadow: 0 10px 35px rgba(9, 37, 65, 0.04);
+}
+
+.about-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  background: linear-gradient(135deg, var(--fr-blue), var(--fr-cyan));
+  box-shadow: 0 14px 34px rgba(9, 37, 65, 0.18);
+}
+
+.about-avatar.alt {
+  background: linear-gradient(135deg, var(--fr-green), var(--fr-cyan));
+}
+
+.about-photo {
+  display: block;
+  width: 128px;
+  height: 128px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 4px solid #eef4fb;
+  box-shadow: 0 14px 34px rgba(9, 37, 65, 0.16);
+}
+
+.about-role {
+  display: block;
+  margin: 6px 0 14px;
+  color: var(--fr-blue);
+  font-weight: 700;
+  font-size: 0.8125rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.about-profile p {
+  margin-bottom: 0;
+  line-height: 1.75;
+}
+
+.about-local {
+  border: 1px solid #e5edf5;
+  border-radius: var(--fr-r-md);
+  background: #f4faff;
+}
+
+@media (max-width: 767.98px) {
+  .about-hero {
+    padding: 60px 0 52px;
+  }
+
+  .about-section {
+    padding: 48px 0;
+  }
+
+  .about-hero .btn {
+    display: block;
+    width: 100%;
+    margin: 0 0 0.75rem;
+  }
+
+  .about-hero .btn:last-child {
+    margin-bottom: 0;
+  }
+}
