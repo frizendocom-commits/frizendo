@@ -178,14 +178,6 @@ export default function Page() {
 
       <section className="about-hero" id="about">
         <div className="container">
-          <nav aria-label="Breadcrumb">
-            <ol className="about-breadcrumb">
-              <li>
-                <Link href="/">Home</Link>
-              </li>
-              <li aria-current="page">About</li>
-            </ol>
-          </nav>
           <p className="about-kicker">About Frizendo</p>
           <h1>About Frizendo — Digital Marketing Agency in Gilgit</h1>
           <p className="about-lead">
@@ -212,18 +204,7 @@ export default function Page() {
       <section className="about-section" id="who-we-are">
         <div className="container">
           <div className="row g-5 align-items-center">
-            <div className="col-lg-6">
-              <div className="about-media">
-                <img
-                  alt="Frizendo digital marketing agency in Gilgit, Pakistan"
-                  className="img-fluid"
-                  decoding="async"
-                  loading="lazy"
-                  src="/img/clients-img/Frizendo%20about.png"
-                />
-              </div>
-            </div>
-            <div className="col-lg-6">
+            <div className="col-lg-12">
               <p className="section-kicker">Who We Are</p>
               <h2 className="display-6 mb-4">
                 A Gilgit-based agency with a local focus and global outlook.
