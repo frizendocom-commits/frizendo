@@ -54,17 +54,6 @@ export default function Page() {
         </div>
         <div className="col-6 col-md-4 col-lg-3">
           <div className="fr-client">
-            <a className="fr-client-link" href="https://www.linkedin.com/in/tomkradcliff/" rel="noopener" target="_blank">
-              <img alt="Tom Radcliff logo" className="fr-client-logo" src="/img/clients-img/Tom%20Radcliff.jpg" />
-              Tom Radcliff
-              <small>
-                Australia
-              </small>
-            </a>
-          </div>
-        </div>
-        <div className="col-6 col-md-4 col-lg-3">
-          <div className="fr-client">
             <a className="fr-client-link" href="https://jutech.co/mobile-development" rel="noopener" target="_blank">
               <img alt="JuTech Singapore logo" className="fr-client-logo" src="/img/clients-img/JuTech%20Singapore.jpg" />
               JuTech Singapore
@@ -109,62 +98,125 @@ export default function Page() {
         </div>
         <div className="col-6 col-md-4 col-lg-3">
           <div className="fr-client">
-            <a className="fr-client-link" href="https://www.instagram.com/frizendo/drhadleyleatherman/" rel="noopener" target="_blank">
-              <img alt="Dr. Hadley Leatherman, MD logo" className="fr-client-logo" src="/img/clients-img/Dr.%20Hadley%20Leatherman%2C%20MD.jpg" />
-              Dr. Hadley Leatherman, MD
+            <a className="fr-client-link" href="https://hunzapurezza.com/" rel="noopener" target="_blank">
+              <img alt="Hunza Purezza logo" className="fr-client-logo" src="/img/clients-img/Hunza%20Purezza%20Orange%20Berry%20Emblem.jpg" />
+              Hunza Purezza
               <small>
-                USA
-              </small>
-            </a>
-          </div>
-        </div>
-        <div className="col-6 col-md-4 col-lg-3">
-          <div className="fr-client">
-            <a className="fr-client-link" href="https://www.linkedin.com/in/mjmagett/" rel="noopener" target="_blank">
-              <img alt="Marilyn J. Magett logo" className="fr-client-logo" src="/img/clients-img/Marilyn%20J.%20Magett.jpg" />
-              Marilyn J. Magett
-              <small>
-                USA
-              </small>
-            </a>
-          </div>
-        </div>
-        <div className="col-6 col-md-4 col-lg-3">
-          <div className="fr-client">
-            <a className="fr-client-link" href="https://www.linkedin.com/in/ajaz-hussain-3549a4174/" rel="noopener" target="_blank">
-              <img alt="Ajaz Hussain logo" className="fr-client-logo" src="/img/clients-img/Ajaz%20Hussain.jpg" />
-              Ajaz Hussain
-              <small>
-                USA
-              </small>
-            </a>
-          </div>
-        </div>
-        <div className="col-6 col-md-4 col-lg-3">
-          <div className="fr-client">
-            <a className="fr-client-link" href="https://www.linkedin.com/in/sheemajehanzeb/" rel="noopener" target="_blank">
-              <img alt="Sheema Jehanzeb logo" className="fr-client-logo" src="/img/clients-img/Sheema%20Jehanzeb.jpg" />
-              Sheema Jehanzeb
-              <small>
-                Dubai
-              </small>
-            </a>
-          </div>
-        </div>
-        <div className="col-6 col-md-4 col-lg-3">
-          <div className="fr-client">
-            <a className="fr-client-link" href="https://www.linkedin.com/in/pmpriyanka/" rel="noopener" target="_blank">
-              <img alt="Priyanka Das logo" className="fr-client-logo" src="/img/clients-img/Priyanka%20Das.jpg" />
-              Priyanka Das
-              <small>
-                Canada
+                Pakistan
               </small>
             </a>
           </div>
         </div>
       </div>
     </div>
-  </section>    
+  </section>
+  <section className="container-xxl py-5 bg-light" id="markets">
+    <div className="container">
+      <div className="text-center mx-auto mb-5" style={{maxWidth: 760}}>
+        <p className="section-kicker">
+          Clients
+        </p>
+        <h2 className="display-6">
+          Clients we have worked with.
+        </h2>
+        <p>
+          Trusted by clients across Pakistan, the UK, Hungary, the USA, Australia, and beyond.
+        </p>
+      </div>
+      <div className="row g-4">
+        <div className="col-md-6 col-lg-4">
+          <div className="fr-card p-4">
+            <a className="fr-client-link" href="https://www.linkedin.com/in/tomkradcliff/" rel="noopener" target="_blank">
+              <img alt="Tom Radcliff logo" className="fr-card-logo" src="/img/clients-img/Tom%20Radcliff.jpg" />
+              <h3 className="h5">
+                Tom Radcliff</h3>
+              <p className="text-primary fw-bold mb-2">
+                Australia
+              </p>
+              <p className="mb-0">
+                YouTube management and channel growth support.
+              </p>
+            </a>
+          </div>
+        </div>
+        <div className="col-md-6 col-lg-4">
+          <div className="fr-card p-4">
+            <a className="fr-client-link" href="https://www.linkedin.com/in/mjmagett/" rel="noopener" target="_blank">
+              <img alt="Marilyn J. Magett logo" className="fr-card-logo" src="/img/clients-img/Marilyn%20J.%20Magett.jpg" />
+              <h3 className="h5">
+                Marilyn J. Magett</h3>
+              <p className="text-primary fw-bold mb-2">
+                USA
+              </p>
+              <p className="mb-0">
+                LinkedIn Ads campaign setup and tracking.
+              </p>
+            </a>
+          </div>
+        </div>
+        <div className="col-md-6 col-lg-4">
+          <div className="fr-card p-4">
+            <a className="fr-client-link" href="https://www.instagram.com/frizendo/drhadleyleatherman/" rel="noopener" target="_blank">
+              <img alt="Dr. Hadley Leatherman, MD logo" className="fr-card-logo" src="/img/clients-img/Dr.%20Hadley%20Leatherman%2C%20MD.jpg" />
+              <h3 className="h5">
+                Dr. Hadley Leatherman, MD</h3>
+              <p className="text-primary fw-bold mb-2">
+                USA
+              </p>
+              <p className="mb-0">
+                Social media setup and management.
+              </p>
+            </a>
+          </div>
+        </div>
+        <div className="col-md-6 col-lg-4">
+          <div className="fr-card p-4">
+            <a className="fr-client-link" href="https://www.linkedin.com/in/ajaz-hussain-3549a4174/" rel="noopener" target="_blank">
+              <img alt="Ajaz Hussain logo" className="fr-card-logo" src="/img/clients-img/Ajaz%20Hussain.jpg" />
+              <h3 className="h5">
+                Ajaz Hussain</h3>
+              <p className="text-primary fw-bold mb-2">
+                USA
+              </p>
+              <p className="mb-0">
+                Lead generation.
+              </p>
+            </a>
+          </div>
+        </div>
+        <div className="col-md-6 col-lg-4">
+          <div className="fr-card p-4">
+            <a className="fr-client-link" href="https://www.linkedin.com/in/sheemajehanzeb/" rel="noopener" target="_blank">
+              <img alt="Sheema Jehanzeb logo" className="fr-card-logo" src="/img/clients-img/Sheema%20Jehanzeb.jpg" />
+              <h3 className="h5">
+                Sheema Jehanzeb</h3>
+              <p className="text-primary fw-bold mb-2">
+                Dubai
+              </p>
+              <p className="mb-0">
+                LinkedIn marketing and personal branding.
+              </p>
+            </a>
+          </div>
+        </div>
+        <div className="col-md-6 col-lg-4">
+          <div className="fr-card p-4">
+            <a className="fr-client-link" href="https://www.linkedin.com/in/pmpriyanka/" rel="noopener" target="_blank">
+              <img alt="Priyanka Das logo" className="fr-card-logo" src="/img/clients-img/Priyanka%20Das.jpg" />
+              <h3 className="h5">
+                Priyanka Das</h3>
+              <p className="text-primary fw-bold mb-2">
+                Canada
+              </p>
+              <p className="mb-0">
+                Book marketing for an AI product management book across different platforms.
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section className="footer-cta">
     <div className="footer-cta-content">
       <div>
