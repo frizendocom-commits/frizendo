@@ -5,8 +5,25 @@ import Footer from "@/components/Footer";
 import SiteInit from "@/components/SiteInit";
 import RouterAdapter from "@/components/RouterAdapter";
 
+const OG_IMAGE = {
+  url: "/img/clients-img/Frizendo-logo.png",
+  width: 500,
+  height: 500,
+  alt: "Frizendo",
+  type: "image/png",
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://frizendo.com"),
+  openGraph: {
+    type: "website",
+    siteName: "Frizendo",
+    images: [OG_IMAGE],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [OG_IMAGE.url],
+  },
 };
 
 export default function RootLayout({

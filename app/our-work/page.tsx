@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Our Work | Portfolio & Digital Marketing Projects | Frizendo",
   description: "Selected Frizendo work: campaign result snapshots, international projects and client project profiles from Pakistan and global markets.",
   alternates: { canonical: "https://frizendo.com/our-work.html" },
-  openGraph: {"url":"https://frizendo.com/our-work.html","images":["https://frizendo.com/assets/frizendo-logo.png"]},
+  openGraph: {"url":"https://frizendo.com/our-work.html","images":[{"url":"/img/clients-img/Frizendo-logo.png","width":500,"height":500,"alt":"Frizendo","type":"image/png"}]},
 }
 
 export const viewport: Viewport = {

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Clients & Projects | Brands We Have Worked With | Frizendo",
   description: "Brands and projects Frizendo has worked with across Pakistan, the United Kingdom, USA, Australia and Hungary.",
   alternates: { canonical: "https://frizendo.com/clients.html" },
-  openGraph: {"url":"https://frizendo.com/clients.html","images":["https://frizendo.com/assets/frizendo-logo.png"]},
+  openGraph: {"url":"https://frizendo.com/clients.html","images":[{"url":"/img/clients-img/Frizendo-logo.png","width":500,"height":500,"alt":"Frizendo","type":"image/png"}]},
 }
 
 export const viewport: Viewport = {

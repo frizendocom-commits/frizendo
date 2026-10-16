@@ -46,14 +46,22 @@ export const metadata: Metadata = {
     description:
       "Meet Frizendo, a digital marketing agency in Gilgit, Pakistan, founded by Amir Hassan with co-founder Yasir Rahim. SEO, paid ads, social media, branding and web solutions for local and international brands.",
     url: "https://frizendo.com/about",
-    images: ["https://frizendo.com/assets/frizendo-logo.png"],
+    images: [
+      {
+        url: "/img/clients-img/Frizendo-logo.png",
+        width: 500,
+        height: 500,
+        alt: "Frizendo",
+        type: "image/png",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "About Frizendo | Digital Marketing Agency in Gilgit",
     description:
       "The Frizendo story: founded by Amir Hassan, co-founded by Yasir Rahim. Digital marketing for businesses in Gilgit and beyond.",
-    images: ["https://frizendo.com/assets/frizendo-logo.png"],
+    images: ["/img/clients-img/Frizendo-logo.png"],
   },
 };
 

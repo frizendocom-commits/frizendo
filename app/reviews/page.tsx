@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Client Reviews & Testimonials | Frizendo",
   description: "What clients say about working with Frizendo on SEO, paid ads, social media and branding projects.",
   alternates: { canonical: "https://frizendo.com/reviews.html" },
-  openGraph: {"url":"https://frizendo.com/reviews.html","images":["https://frizendo.com/assets/frizendo-logo.png"]},
+  openGraph: {"url":"https://frizendo.com/reviews.html","images":[{"url":"/img/clients-img/Frizendo-logo.png","width":500,"height":500,"alt":"Frizendo","type":"image/png"}]},
 }
 
 export const viewport: Viewport = {

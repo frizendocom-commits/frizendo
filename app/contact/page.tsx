@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "Send Frizendo a project brief on WhatsApp, email us or connect on LinkedIn, Instagram and Facebook — digital marketing agency in Gilgit, Pakistan.",
   alternates: { canonical: "https://frizendo.com/contact.html" },
-  openGraph: {"url":"https://frizendo.com/contact.html","images":["https://frizendo.com/assets/frizendo-logo.png"]},
+  openGraph: {"url":"https://frizendo.com/contact.html","images":[{"url":"/img/clients-img/Frizendo-logo.png","width":500,"height":500,"alt":"Frizendo","type":"image/png"}]},
 }
 
 export const viewport: Viewport = {
