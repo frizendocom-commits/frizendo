@@ -498,6 +498,22 @@ body{font-family:Roboto,Arial,sans-serif;color:var(--fr-body);background:#fff}
 }
 
 
+.footer-dev a {
+    color: var(--fr-cyan);
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: color 0.25s ease;
+}
+
+
+.footer-dev a:hover {
+    color: var(--fr-on-dark);
+}
+
+
 /* ========================================
    RESPONSIVE
 ======================================== */
