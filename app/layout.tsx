@@ -6,11 +6,12 @@ import SiteInit from "@/components/SiteInit";
 import RouterAdapter from "@/components/RouterAdapter";
 
 const OG_IMAGE = {
-  url: "/img/clients-img/Frizendo-logo.png",
-  width: 500,
-  height: 500,
-  alt: "Frizendo",
-  type: "image/png",
+  url: "/img/og/frizendo-og.jpg",
+  secureUrl: "https://frizendo.com/img/og/frizendo-og.jpg",
+  width: 1200,
+  height: 630,
+  alt: "Frizendo - Digital Marketing Agency in Gilgit, Pakistan",
+  type: "image/jpeg",
 };
 
 export const metadata: Metadata = {
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    images: [OG_IMAGE.url],
+    images: [{ url: OG_IMAGE.url, alt: OG_IMAGE.alt }],
   },
 };
 

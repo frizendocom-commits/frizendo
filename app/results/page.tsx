@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Results | Real Digital Marketing Proof | Frizendo",
   description: "Campaign results, analytics snapshots and performance numbers from Frizendo digital marketing projects.",
   alternates: { canonical: "https://frizendo.com/results.html" },
-  openGraph: {"url":"https://frizendo.com/results.html","images":[{"url":"/img/clients-img/Frizendo-logo.png","width":500,"height":500,"alt":"Frizendo","type":"image/png"}]},
+  openGraph: {"url":"https://frizendo.com/results.html","images":[{"url":"/img/og/frizendo-og.jpg","secureUrl":"https://frizendo.com/img/og/frizendo-og.jpg","width":1200,"height":630,"alt":"Frizendo - Digital Marketing Agency in Gilgit, Pakistan","type":"image/jpeg"}]},
 }
 
 export const viewport: Viewport = {

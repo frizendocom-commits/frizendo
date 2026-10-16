@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   keywords: ["best marketing agency in Gilgit","digital marketing agency Gilgit","SEO agency Gilgit","marketing agency in Pakistan","affordable digital marketing agency Pakistan","SEO services Pakistan","Meta Ads agency Pakistan","Google Ads agency Pakistan","LinkedIn Ads Pakistan","Frizendo","Amir Hassan Frizendo founder"],
   robots: {"index":true,"follow":true,"max-image-preview":"large","max-snippet":-1,"max-video-preview":-1,"googleBot":{"index":true,"follow":true,"max-image-preview":"large","max-snippet":-1,"max-video-preview":-1}},
   alternates: { canonical: "https://frizendo.com/" },
-  openGraph: {"type":"website","siteName":"Frizendo","title":"Frizendo | Digital Marketing Agency in Gilgit, Pakistan","description":"SEO, paid ads, social media, branding and web development for local and international brands.","url":"https://frizendo.com/","images":[{"url":"/img/clients-img/Frizendo-logo.png","width":500,"height":500,"alt":"Frizendo","type":"image/png"}]},
-  twitter: {"card":"summary_large_image","title":"Frizendo | Digital Marketing Agency in Gilgit, Pakistan","description":"Performance-focused digital marketing for local and international brands.","images":["/img/clients-img/Frizendo-logo.png"]},
+  openGraph: {"type":"website","siteName":"Frizendo","title":"Frizendo | Digital Marketing Agency in Gilgit, Pakistan","description":"SEO, paid ads, social media, branding and web development for local and international brands.","url":"https://frizendo.com/","images":[{"url":"/img/og/frizendo-og.jpg","secureUrl":"https://frizendo.com/img/og/frizendo-og.jpg","width":1200,"height":630,"alt":"Frizendo - Digital Marketing Agency in Gilgit, Pakistan","type":"image/jpeg"}]},
+  twitter: {"card":"summary_large_image","title":"Frizendo | Digital Marketing Agency in Gilgit, Pakistan","description":"Performance-focused digital marketing for local and international brands.","images":[{"url":"/img/og/frizendo-og.jpg","alt":"Frizendo - Digital Marketing Agency in Gilgit, Pakistan"}]},
   authors: [{"name":"Amir Hassan, Frizendo"}],
 }
 

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "Send Frizendo a project brief on WhatsApp, email us or connect on LinkedIn, Instagram and Facebook — digital marketing agency in Gilgit, Pakistan.",
   alternates: { canonical: "https://frizendo.com/contact.html" },
-  openGraph: {"url":"https://frizendo.com/contact.html","images":[{"url":"/img/clients-img/Frizendo-logo.png","width":500,"height":500,"alt":"Frizendo","type":"image/png"}]},
+  openGraph: {"url":"https://frizendo.com/contact.html","images":[{"url":"/img/og/frizendo-og.jpg","secureUrl":"https://frizendo.com/img/og/frizendo-og.jpg","width":1200,"height":630,"alt":"Frizendo - Digital Marketing Agency in Gilgit, Pakistan","type":"image/jpeg"}]},
 }
 
 export const viewport: Viewport = {
