@@ -115,8 +115,8 @@ export default function Footer() {
         </p>
 
         <div className="footer-bottom-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+          <a href="/assets/Frizendo_Privacy_Policy.pdf">Privacy Policy</a>
+          <a href="/assets/Frizendo_Terms_of_Service.pdf">Terms of Service</a>
         </div>
 
         <p className="footer-made">

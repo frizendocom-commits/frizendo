@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { Viewport } from "next";
+import ServicesSection from "@/components/ServicesSection";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://frizendo.com"),
@@ -196,101 +197,7 @@ export default function Page() {
       </div>
     </div>
   </section>
-  <section className="container-xxl py-5 bg-light" id="services">
-    <div className="container">
-      <div className="text-center mx-auto mb-5" style={{maxWidth: 760}}>
-        <p className="section-kicker">
-          Services
-        </p>
-        <h2 className="display-6">
-          Everything your brand needs to get noticed.
-        </h2>
-        <p>
-          From search and paid acquisition to social media, branding and web presence, Frizendo brings core digital growth services together.
-        </p>
-      </div>
-      <div className="row g-4">
-        <div className="col-md-6 col-lg-4">
-          <div className="fr-card p-4">
-            <div className="icon">
-              <i className="fas fa-search">
-              </i>
-            </div>
-            <h3 className="h4">
-              Search Engine Optimization (SEO)</h3>
-            <p className="mb-0">
-              Improve organic visibility, search rankings and qualified traffic with practical SEO strategies.
-            </p>
-          </div>
-        </div>
-        <div className="col-md-6 col-lg-4">
-          <div className="fr-card p-4">
-            <div className="icon">
-              <i className="fab fa-google">
-              </i>
-            </div>
-            <h3 className="h4">
-              Google Ads</h3>
-            <p className="mb-0">
-              Build and optimize Google Ads campaigns focused on qualified traffic, leads and conversions.
-            </p>
-          </div>
-        </div>
-        <div className="col-md-6 col-lg-4">
-          <div className="fr-card p-4">
-            <div className="icon">
-              <i className="fab fa-facebook-f">
-              </i>
-            </div>
-            <h3 className="h4">
-              Meta Ads</h3>
-            <p className="mb-0">
-              Reach the right audiences through Facebook and Instagram advertising with measurable campaign goals.
-            </p>
-          </div>
-        </div>
-        <div className="col-md-6 col-lg-4">
-          <div className="fr-card p-4">
-            <div className="icon">
-              <i className="fab fa-linkedin-in">
-              </i>
-            </div>
-            <h3 className="h4">
-              LinkedIn Ads &amp; B2B</h3>
-            <p className="mb-0">
-              Support B2B growth with LinkedIn advertising, content strategy, targeting and lead generation.
-            </p>
-          </div>
-        </div>
-        <div className="col-md-6 col-lg-4">
-          <div className="fr-card p-4">
-            <div className="icon">
-              <i className="fas fa-share-alt">
-              </i>
-            </div>
-            <h3 className="h4">
-              Social Media Management</h3>
-            <p className="mb-0">
-              Manage social channels with consistent content, audience engagement and professional brand communication.
-            </p>
-          </div>
-        </div>
-        <div className="col-md-6 col-lg-4">
-          <div className="fr-card p-4">
-            <div className="icon">
-              <i className="fas fa-laptop-code">
-              </i>
-            </div>
-            <h3 className="h4">
-              Branding &amp; Web</h3>
-            <p className="mb-0">
-              Strengthen your digital presence with branding, personal positioning and website solutions.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <ServicesSection actionHref="/services" actionLabel="Explore Service" />
   <section className="container-xxl py-5" id="clients">
     <div className="container">
       <div className="text-center mx-auto mb-5" style={{maxWidth: 760}}>

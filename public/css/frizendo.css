@@ -859,3 +859,433 @@ body{font-family:Roboto,Arial,sans-serif;color:var(--fr-body);background:#fff}
     max-width: 90%;
     height: auto;
 }
+
+
+/* ========================================
+   SERVICES SECTION
+   Scoped to .svc-section (home + /services)
+   Uses existing Frizendo tokens only
+======================================== */
+
+.svc-section .svc-head {
+    max-width: 760px;
+    margin: 0 auto 46px;
+}
+
+
+.svc-section .svc-head h2 {
+    margin: 10px 0 0;
+    color: var(--fr-dark);
+}
+
+
+.svc-section .svc-head h2::after {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 3px;
+    margin: 22px auto 0;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--fr-blue), var(--fr-cyan), var(--fr-green));
+}
+
+
+.svc-section .svc-lead {
+    max-width: 640px;
+    margin: 20px auto 0;
+    color: var(--fr-body);
+    font-size: var(--fr-fs-md);
+    line-height: 1.75;
+}
+
+
+.svc-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    padding: 30px 28px 26px;
+
+    background: #fff;
+    border: 1px solid #e5edf5;
+    border-radius: var(--fr-r-md);
+    box-shadow: 0 10px 35px #0925410a;
+
+    overflow: hidden;
+
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+
+/* brand accent line, revealed on hover / keyboard focus */
+.svc-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+
+    background: linear-gradient(90deg, var(--fr-blue), var(--fr-cyan), var(--fr-green));
+
+    transform: scaleX(0);
+    transform-origin: left center;
+
+    transition: transform .35s ease;
+}
+
+
+.svc-card:hover,
+.svc-card:focus-within {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 55px #09254115;
+    border-color: rgba(8, 124, 247, 0.45);
+}
+
+
+.svc-card:hover::before,
+.svc-card:focus-within::before {
+    transform: scaleX(1);
+}
+
+
+.svc-card-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 16px;
+}
+
+
+.svc-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+
+    width: 58px;
+    height: 58px;
+
+    border: 1px solid #e5edf5;
+    border-radius: var(--fr-r-sm);
+    background: #f4faff;
+    color: var(--fr-blue);
+
+    font-size: 1.5rem;
+    line-height: 1;
+
+    transition: background .25s ease, color .25s ease, border-color .25s ease, transform .25s ease;
+}
+
+
+.svc-card:hover .svc-icon,
+.svc-card:focus-within .svc-icon {
+    background: var(--fr-blue);
+    border-color: var(--fr-blue);
+    color: #fff;
+
+    transform: translateY(-2px);
+}
+
+
+.svc-index {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.02em;
+
+    color: #0925411a;
+
+    user-select: none;
+
+    transition: color .25s ease;
+}
+
+
+.svc-card:hover .svc-index,
+.svc-card:focus-within .svc-index {
+    color: #09254133;
+}
+
+
+.svc-title {
+    margin: 22px 0 10px;
+
+    color: var(--fr-dark);
+    font-size: var(--fr-fs-xl);
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+
+.svc-desc {
+    margin: 0 0 20px;
+
+    color: var(--fr-body);
+    font-size: var(--fr-fs-sm);
+    line-height: 1.75;
+}
+
+
+.svc-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    align-self: flex-start;
+
+    margin-top: auto;
+    padding-top: 18px;
+
+    color: var(--fr-blue);
+    font-size: var(--fr-fs-sm);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+/* makes the whole card clickable, keeping one accessible link */
+.svc-link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+
+.svc-arrow {
+    display: inline-block;
+    line-height: 1;
+
+    transition: transform .25s ease;
+}
+
+
+.svc-card:hover .svc-arrow,
+.svc-link:focus-visible .svc-arrow {
+    transform: translateX(5px);
+}
+
+
+.svc-link:focus-visible {
+    outline: 3px solid var(--fr-blue);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+
+.svc-card:has(.svc-link:focus-visible) {
+    transform: translateY(-6px);
+    border-color: var(--fr-blue);
+    box-shadow: 0 20px 55px #09254115, 0 0 0 3px rgba(8, 124, 247, 0.18);
+}
+
+
+@media (max-width: 767.98px) {
+    .svc-section .svc-head {
+        margin-bottom: 34px;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    .svc-card {
+        padding: 24px 22px 22px;
+    }
+
+    .svc-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 1.35rem;
+    }
+
+    .svc-index {
+        font-size: 1.5rem;
+    }
+
+    .svc-title {
+        margin-top: 18px;
+        font-size: var(--fr-fs-lg);
+    }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    .svc-card,
+    .svc-card::before,
+    .svc-icon,
+    .svc-index,
+    .svc-arrow {
+        transition: none;
+    }
+
+    .svc-card:hover,
+    .svc-card:focus-within,
+    .svc-card:has(.svc-link:focus-visible) {
+        transform: none;
+    }
+
+    .svc-card:hover::before,
+    .svc-card:focus-within::before {
+        transform: scaleX(1);
+    }
+
+    .svc-card:hover .svc-icon,
+    .svc-card:focus-within .svc-icon,
+    .svc-card:hover .svc-arrow,
+    .svc-link:focus-visible .svc-arrow {
+        transform: none;
+    }
+}
+
+
+/* ========================================
+   LEGAL / TERMS PAGE
+   Scoped to .legal-page
+======================================== */
+
+.legal-page .legal-head {
+    max-width: 720px;
+    margin: 0 auto 42px;
+}
+
+
+.legal-page .legal-head h2 {
+    margin: 10px 0 0;
+    color: var(--fr-dark);
+}
+
+
+.legal-page .legal-head h2::after {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 3px;
+    margin: 22px auto 0;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--fr-blue), var(--fr-cyan), var(--fr-green));
+}
+
+
+.legal-page .legal-lead {
+    max-width: 620px;
+    margin: 20px auto 0;
+    color: var(--fr-body);
+    font-size: var(--fr-fs-md);
+    line-height: 1.75;
+}
+
+
+.legal-wrap {
+    max-width: 900px;
+    margin: auto;
+}
+
+
+.legal-card {
+    padding: 26px 28px;
+
+    background: #fff;
+    border: 1px solid #e5edf5;
+    border-radius: var(--fr-r-md);
+    box-shadow: 0 10px 35px #0925410a;
+}
+
+
+.legal-card + .legal-card {
+    margin-top: 16px;
+}
+
+
+.legal-card-head {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+
+    margin-bottom: 10px;
+}
+
+
+.legal-num {
+    flex: 0 0 auto;
+
+    color: var(--fr-blue);
+    font-size: var(--fr-fs-sm);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+}
+
+
+.legal-card h3 {
+    margin: 0;
+
+    color: var(--fr-dark);
+    font-size: var(--fr-fs-lg);
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+
+.legal-card p {
+    margin: 0;
+
+    color: var(--fr-body);
+    font-size: var(--fr-fs-sm);
+    line-height: 1.8;
+}
+
+
+.legal-card ul {
+    margin: 0;
+    padding-left: 1.15rem;
+
+    color: var(--fr-body);
+    font-size: var(--fr-fs-sm);
+    line-height: 1.8;
+}
+
+
+.legal-card li + li {
+    margin-top: 8px;
+}
+
+
+.legal-contact {
+    margin: 26px 0 0;
+
+    color: var(--fr-muted);
+    font-size: var(--fr-fs-sm);
+    line-height: 1.8;
+    text-align: center;
+}
+
+
+.legal-contact a {
+    color: var(--fr-blue);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+.legal-contact a:hover {
+    text-decoration: underline;
+}
+
+
+.legal-contact a:focus-visible {
+    outline: 3px solid var(--fr-blue);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+
+@media (max-width: 575.98px) {
+    .legal-card {
+        padding: 22px 20px;
+    }
+
+    .legal-card-head {
+        gap: 10px;
+        margin-bottom: 8px;
+    }
+}
