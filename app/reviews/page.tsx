@@ -5,8 +5,8 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://frizendo.com"),
   title: "Client Reviews & Testimonials | Frizendo",
   description: "What clients say about working with Frizendo on SEO, paid ads, social media and branding projects.",
-  alternates: { canonical: "https://frizendo.com/reviews.html" },
-  openGraph: {"url":"https://frizendo.com/reviews.html","images":[{"url":"/img/og/frizendo-og.jpg","secureUrl":"https://frizendo.com/img/og/frizendo-og.jpg","width":1200,"height":630,"alt":"Frizendo - Digital Marketing Agency in Gilgit, Pakistan","type":"image/jpeg"}]},
+  alternates: { canonical: "https://frizendo.com/reviews" },
+  openGraph: {"url":"https://frizendo.com/reviews","images":[{"url":"/img/og/frizendo-og.jpg","secureUrl":"https://frizendo.com/img/og/frizendo-og.jpg","width":1200,"height":630,"alt":"Frizendo - Digital Marketing Agency in Gilgit, Pakistan","type":"image/jpeg"}]},
 }
 
 export const viewport: Viewport = {

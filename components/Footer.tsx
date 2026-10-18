@@ -46,6 +46,9 @@ export default function Footer() {
               <Link href="/about">About Us</Link>
             </li>
             <li>
+              <Link href="/meaning">Brand Meaning</Link>
+            </li>
+            <li>
               <Link href="/our-work">Our Work</Link>
             </li>
             <li>

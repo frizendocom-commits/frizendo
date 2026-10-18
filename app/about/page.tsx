@@ -79,8 +79,8 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "ProfessionalService",
-      "@id": "https://frizendo.com/#business",
+      "@type": ["Organization", "ProfessionalService"],
+      "@id": "https://frizendo.com/#organization",
       name: "Frizendo",
       url: "https://frizendo.com/",
       logo: "https://frizendo.com/assets/frizendo-logo.png",
@@ -131,7 +131,7 @@ const jsonLd = {
       "@id": "https://frizendo.com/#website",
       url: "https://frizendo.com/",
       name: "Frizendo",
-      publisher: { "@id": "https://frizendo.com/#business" },
+      publisher: { "@id": "https://frizendo.com/#organization" },
       inLanguage: "en",
     },
     {
@@ -140,24 +140,24 @@ const jsonLd = {
       url: "https://frizendo.com/about",
       name: "About Frizendo | Digital Marketing Agency in Gilgit",
       isPartOf: { "@id": "https://frizendo.com/#website" },
-      about: { "@id": "https://frizendo.com/#business" },
+      about: { "@id": "https://frizendo.com/#organization" },
       inLanguage: "en",
       breadcrumb: { "@id": "https://frizendo.com/about#breadcrumb" },
-      mainEntity: { "@id": "https://frizendo.com/#business" },
+      mainEntity: { "@id": "https://frizendo.com/#organization" },
     },
     {
       "@type": "Person",
       "@id": "https://frizendo.com/#amir-hassan",
       name: "Amir Hassan",
       jobTitle: "Founder",
-      worksFor: { "@id": "https://frizendo.com/#business" },
+      worksFor: { "@id": "https://frizendo.com/#organization" },
     },
     {
       "@type": "Person",
       "@id": "https://frizendo.com/#yasir-rahim",
       name: "Yasir Rahim",
       jobTitle: "Co-Founder",
-      worksFor: { "@id": "https://frizendo.com/#business" },
+      worksFor: { "@id": "https://frizendo.com/#organization" },
     },
     {
       "@type": "BreadcrumbList",
@@ -232,11 +232,16 @@ export default function Page() {
                 audiences through search, paid advertising, social media,
                 branding and web solutions.
               </p>
-              <p className="mb-0">
+              <p className="mb-4">
                 Whether you need more visibility on Google, a stronger social
                 media presence or a website that represents your business well,
                 Frizendo plans digital marketing around your market, your
                 customers and your goals.
+              </p>
+              <p className="mb-0">
+                The name carries the same idea — Frizendo stands for Fresh
+                Ideas, Real Results. See what FRIZ, EN and DO mean in the{" "}
+                <Link href="/meaning">Frizendo brand meaning</Link> page.
               </p>
             </div>
           </div>

@@ -7,8 +7,8 @@ export const metadata: Metadata = {
   title: "Terms of Service | Frizendo",
   description:
     "Terms of service for Frizendo, a digital marketing agency in Gilgit, Pakistan: scope of work, client responsibilities, fees, ad spend, intellectual property, liability and governing law.",
-  alternates: { canonical: "https://frizendo.com/terms.html" },
-  openGraph: {"url":"https://frizendo.com/terms.html","images":[{"url":"/img/og/frizendo-og.jpg","secureUrl":"https://frizendo.com/img/og/frizendo-og.jpg","width":1200,"height":630,"alt":"Frizendo - Digital Marketing Agency in Gilgit, Pakistan","type":"image/jpeg"}]},
+  alternates: { canonical: "https://frizendo.com/terms" },
+  openGraph: {"url":"https://frizendo.com/terms","images":[{"url":"/img/og/frizendo-og.jpg","secureUrl":"https://frizendo.com/img/og/frizendo-og.jpg","width":1200,"height":630,"alt":"Frizendo - Digital Marketing Agency in Gilgit, Pakistan","type":"image/jpeg"}]},
 }
 
 export const viewport: Viewport = {

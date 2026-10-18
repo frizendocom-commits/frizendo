@@ -18,10 +18,88 @@ export const viewport: Viewport = {
   themeColor: "#ffffff",
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Organization", "ProfessionalService"],
+      "@id": "https://frizendo.com/#organization",
+      name: "Frizendo",
+      url: "https://frizendo.com/",
+      logo: "https://frizendo.com/assets/frizendo-logo.png",
+      image: "https://frizendo.com/assets/frizendo-logo.png",
+      description:
+        "Frizendo stands for Fresh Ideas, Real Results. Digital marketing agency serving Gilgit, Pakistan and international clients with SEO, Meta Ads, Google Ads, LinkedIn Ads, social media marketing, branding and web development.",
+      founder: { "@id": "https://frizendo.com/#amir-hassan" },
+      employee: [{ "@id": "https://frizendo.com/#yasir-rahim" }],
+      areaServed: [
+        "Gilgit, Pakistan",
+        "Pakistan",
+        "United Kingdom",
+        "United States",
+        "Australia",
+        "Hungary",
+        "Worldwide",
+      ],
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Gilgit",
+        addressRegion: "Gilgit-Baltistan",
+        addressCountry: "PK",
+      },
+      email: "frizendo.com@gmail.com",
+      telephone: "+923498901846",
+      priceRange: "$$",
+      sameAs: [
+        "https://www.facebook.com/frizendo",
+        "https://www.instagram.com/frizendo/",
+        "https://www.linkedin.com/company/frizendo/home",
+      ],
+      serviceType: [
+        "SEO",
+        "Digital Marketing",
+        "Meta Ads",
+        "Google Ads",
+        "LinkedIn Ads",
+        "Social Media Management",
+        "Branding",
+        "Web Development",
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://frizendo.com/#website",
+      url: "https://frizendo.com/",
+      name: "Frizendo",
+      publisher: { "@id": "https://frizendo.com/#organization" },
+      inLanguage: "en",
+    },
+    {
+      "@type": "Person",
+      "@id": "https://frizendo.com/#amir-hassan",
+      name: "Amir Hassan",
+      jobTitle: "Founder",
+      worksFor: { "@id": "https://frizendo.com/#organization" },
+    },
+    {
+      "@type": "Person",
+      "@id": "https://frizendo.com/#yasir-rahim",
+      name: "Yasir Rahim",
+      jobTitle: "Co-Founder",
+      worksFor: { "@id": "https://frizendo.com/#organization" },
+    },
+  ],
+};
+
 export default function Page() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "\r\n   {\r\n \"@context\":\"https://schema.org\",\r\n \"@graph\":[\r\n  {\r\n   \"@type\":\"ProfessionalService\",\r\n   \"@id\":\"https://frizendo.com/#business\",\r\n   \"name\":\"Frizendo\",\r\n   \"url\":\"https://frizendo.com/\",\r\n   \"logo\":\"https://frizendo.com/assets/frizendo-logo.png\",\r\n   \"image\":\"https://frizendo.com/assets/frizendo-logo.png\",\r\n   \"description\":\"Digital marketing agency serving Gilgit, Pakistan and international clients with SEO, Meta Ads, Google Ads, LinkedIn Ads, social media marketing, branding and web development.\",\r\n   \"founder\":{\"@type\":\"Person\",\"name\":\"Amir Hassan\"},\r\n   \"employee\":[{\"@type\":\"Person\",\"name\":\"Yasir Rahim\",\"jobTitle\":\"Co-Founder\"}],\r\n   \"areaServed\":[\"Gilgit, Pakistan\",\"Pakistan\",\"United Kingdom\",\"United States\",\"Australia\",\"Hungary\",\"Worldwide\"],\r\n   \"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Gilgit\",\"addressRegion\":\"Gilgit-Baltistan\",\"addressCountry\":\"PK\"},\r\n   \"email\":\"frizendo.com@gmail.com\",\r\n   \"telephone\":\"+923498901846\",\r\n   \"priceRange\":\"$$\",\r\n   \"serviceType\":[\"SEO\",\"Digital Marketing\",\"Meta Ads\",\"Google Ads\",\"LinkedIn Ads\",\"Social Media Management\",\"Branding\",\"Web Development\"]\r\n  },\r\n  {\r\n   \"@type\":\"WebSite\",\r\n   \"@id\":\"https://frizendo.com/#website\",\r\n   \"url\":\"https://frizendo.com/\",\r\n   \"name\":\"Frizendo\",\r\n   \"publisher\":{\"@id\":\"https://frizendo.com/#business\"},\r\n   \"inLanguage\":\"en\"\r\n  },\r\n  {\r\n   \"@type\":\"Person\",\r\n   \"@id\":\"https://frizendo.com/#amir-hassan\",\r\n   \"name\":\"Amir Hassan\",\r\n   \"jobTitle\":\"Founder\",\r\n   \"worksFor\":{\"@id\":\"https://frizendo.com/#business\"}\r\n  },\r\n  {\r\n   \"@type\":\"Person\",\r\n   \"@id\":\"https://frizendo.com/#yasir-rahim\",\r\n   \"name\":\"Yasir Rahim\",\r\n   \"jobTitle\":\"Co-Founder\",\r\n   \"worksFor\":{\"@id\":\"https://frizendo.com/#business\"}\r\n  }\r\n ]\r\n}\r\n  " }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       <link rel="preload" as="image" href="/img/clients-img/hero-background.webp" type="image/webp" />
       <section className="container-fluid px-0 mb-5 hero-frizendo" id="home">
     <h1 className="visually-hidden">
@@ -194,6 +272,61 @@ export default function Page() {
             Talk to Frizendo
           </a>
         </div>
+      </div>
+    </div>
+  </section>
+  <section className="container-xxl py-5 bg-light" id="brand-meaning">
+    <div className="container">
+      <div className="text-center mx-auto mb-5" style={{maxWidth: 760}}>
+        <p className="section-kicker">
+          Brand Meaning
+        </p>
+        <h2 className="display-6">
+          What Does Frizendo Stand For?
+        </h2>
+        <p>
+          Frizendo stands for Fresh Ideas, Real Results — a brand philosophy
+          built on creative thinking, energy, and delivering meaningful
+          business outcomes.
+        </p>
+      </div>
+      <div className="row g-4">
+        <div className="col-md-4">
+          <div className="fr-card p-4 h-100">
+            <h3 className="h5">
+              FRIZ — Fresh Ideas
+            </h3>
+            <p className="mb-0">
+              Creative thinking, new perspectives, and innovative solutions.
+            </p>
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div className="fr-card p-4 h-100">
+            <h3 className="h5">
+              EN — Energy
+            </h3>
+            <p className="mb-0">
+              Passion, motivation, and dedicated execution.
+            </p>
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div className="fr-card p-4 h-100">
+            <h3 className="h5">
+              DO — Deliver Outcomes
+            </h3>
+            <p className="mb-0">
+              Turning strategies into action and focusing on measurable
+              business results.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="see-more-wrap">
+        <a className="btn btn-outline-dark rounded-pill py-3 px-5" href="/meaning">
+          Discover the meaning behind Frizendo
+        </a>
       </div>
     </div>
   </section>

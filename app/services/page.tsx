@@ -6,8 +6,8 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://frizendo.com"),
   title: "Digital Marketing Services | SEO, Google Ads, Meta Ads & Social Media | Frizendo",
   description: "Frizendo services: SEO, Google Ads, Meta Ads, LinkedIn Ads, social media management, branding and web solutions for growing brands.",
-  alternates: { canonical: "https://frizendo.com/services.html" },
-  openGraph: {"url":"https://frizendo.com/services.html","images":[{"url":"/img/og/frizendo-og.jpg","secureUrl":"https://frizendo.com/img/og/frizendo-og.jpg","width":1200,"height":630,"alt":"Frizendo - Digital Marketing Agency in Gilgit, Pakistan","type":"image/jpeg"}]},
+  alternates: { canonical: "https://frizendo.com/services" },
+  openGraph: {"url":"https://frizendo.com/services","images":[{"url":"/img/og/frizendo-og.jpg","secureUrl":"https://frizendo.com/img/og/frizendo-og.jpg","width":1200,"height":630,"alt":"Frizendo - Digital Marketing Agency in Gilgit, Pakistan","type":"image/jpeg"}]},
 }
 
 export const viewport: Viewport = {
