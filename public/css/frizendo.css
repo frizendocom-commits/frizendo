@@ -30,9 +30,6 @@ body{font-family:Roboto,Arial,sans-serif;color:var(--fr-body);background:#fff}
 .hero-frizendo .carousel-control-prev:hover,.hero-frizendo .carousel-control-next:hover{opacity:1}
 .feature-row .feature-item{transition:.25s}.feature-row .feature-item:hover{transform:translateY(-5px);box-shadow:0 18px 45px #09254112}
 .section-kicker{letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--fr-blue);font-size:.875rem}.fr-card{height:100%;border:1px solid #e5edf5;border-radius:var(--fr-r-md);background:#fff;box-shadow:0 10px 35px #0925410a;transition:.25s}.fr-card:hover{transform:translateY(-6px);box-shadow:0 20px 55px #09254115}.fr-card .icon{font-size:1.75rem;color:var(--fr-blue)}
-.result-media{display:block;overflow:hidden;border:1px solid #e5edf5;border-radius:var(--fr-r-sm);margin-bottom:16px;background:#f4faff}
-.result-media img{display:block;width:100%;height:210px;object-fit:cover;transition:.35s}
-.result-media:hover img{transform:scale(1.06)}
 .fr-client{background:#fff;border:1px solid #e7eef5;border-radius:var(--fr-r-sm);padding:22px;height:100%;font-weight:700;box-shadow:0 7px 24px #09254108}.fr-client small{display:block;color:var(--fr-muted);font-weight:400;margin-top:4px}.fr-client-link{display:block;color:inherit;text-decoration:none}
 .fr-client-logo{display:block;width:calc(100% + 44px);height:150px;object-fit:cover;object-position:center;margin:-22px -22px 14px;border-radius:11px 11px 0 0}
 .fr-card-logo{display:block;width:calc(100% + 48px);height:220px;object-fit:cover;object-position:center;margin:-24px -24px 18px;border-radius:15px 15px 0 0}
@@ -616,7 +613,6 @@ body{font-family:Roboto,Arial,sans-serif;color:var(--fr-body);background:#fff}
         height: 180px;
     }
 
-    .result-media img,
     .fr-result img {
         height: 200px;
     }
@@ -814,10 +810,6 @@ body{font-family:Roboto,Arial,sans-serif;color:var(--fr-body);background:#fff}
     .fr-result img {
         height: auto;
         aspect-ratio: 16 / 10;
-    }
-
-    .result-media img {
-        height: 180px;
     }
 
     /* Review marquee fits the viewport */

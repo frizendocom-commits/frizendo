@@ -91,6 +91,35 @@ const jsonLd = {
   ],
 };
 
+type HomeFaq = { q: string; a: string };
+
+const HOME_FAQS: HomeFaq[] = [
+  {
+    q: "What is Frizendo?",
+    a: "Frizendo is a digital marketing agency based in Gilgit, Gilgit-Baltistan, Pakistan, offering SEO, paid advertising, social media marketing, branding and web solutions to local and international clients.",
+  },
+  {
+    q: "What services does Frizendo provide?",
+    a: "Frizendo provides SEO, Google Ads, Meta Ads, LinkedIn Ads, social media management, content strategy, personal branding, YouTube marketing, branding and website solutions.",
+  },
+  {
+    q: "Does Frizendo provide SEO services in Gilgit?",
+    a: "Yes. Frizendo provides SEO and local SEO strategies designed to improve search visibility, organic traffic and digital presence for businesses in Gilgit and beyond.",
+  },
+  {
+    q: "Does Frizendo work with international clients?",
+    a: "Yes. Frizendo has worked on projects and campaigns for clients and brands across the United Kingdom, Hungary, the United States, Australia and other international markets.",
+  },
+  {
+    q: "Does Frizendo offer affordable digital marketing services in Pakistan?",
+    a: "Frizendo offers practical digital marketing solutions for different business needs and budgets. Contact the team for a project-specific scope and quotation.",
+  },
+  {
+    q: "How can I contact Frizendo?",
+    a: "You can email frizendo.com@gmail.com, message +92 349 8901846 on WhatsApp, or use the contact page on this website.",
+  },
+];
+
 export default function Page() {
   return (
     <>
@@ -661,111 +690,47 @@ export default function Page() {
       </div>
     </div>
   </section>
-  <section className="container-xxl py-5" id="results">
+  <section className="container-xxl py-5" id="home-faq">
     <div className="container">
       <div className="text-center mx-auto mb-5" style={{maxWidth: 760}}>
         <p className="section-kicker">
-          Results
+          FAQs
         </p>
         <h2 className="display-6">
-          Results clients can see.
+          Common questions about Frizendo.
         </h2>
         <p>
-          Campaign and analytics snapshots showing the kind of performance Frizendo works toward.
+          Quick answers to what clients usually ask before getting started.
         </p>
       </div>
-      <div className="row g-4">
-        <div className="col-md-4">
-          <div className="fr-card p-4 h-100">
-            <a className="result-media" data-lightbox="frizendo-results" data-title="YouTube Views 38.5K" href="/assets/youtube-analytics-1.jpg">
-              <img alt="YouTube analytics snapshot showing 38.5K views" src="/assets/youtube-analytics-1.jpg" />
-            </a>
-            <div className="display-6 text-primary fw-bold">
-              38.5K
-            </div>
-            <h3 className="h5 mt-2">
-              YouTube Views
+      <div className="accordion fr-faq mx-auto" id="homeFaqAccordion" style={{maxWidth: 900}}>
+        {HOME_FAQS.map((faq, index) => (
+          <div className="accordion-item mb-2 border rounded overflow-hidden" key={index}>
+            <h3 className="accordion-header">
+              <button
+                className="accordion-button collapsed"
+                data-bs-target={`#homeFaq${index}`}
+                data-bs-toggle="collapse"
+                type="button"
+              >
+                {faq.q}
+              </button>
             </h3>
-            <p className="mb-0">
-              A real analytics snapshot from a managed YouTube project.
-            </p>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div className="fr-card p-4 h-100">
-            <a className="result-media" data-lightbox="frizendo-results" data-title="Watch Time 48.4 hrs" href="/assets/youtube-analytics-2.jpg">
-              <img alt="YouTube analytics snapshot showing 48.4 hours watch time" src="/assets/youtube-analytics-2.jpg" />
-            </a>
-            <div className="display-6 text-primary fw-bold">
-              48.4 hrs
+            <div
+              className="accordion-collapse collapse"
+              data-bs-parent="#homeFaqAccordion"
+              id={`homeFaq${index}`}
+            >
+              <div className="accordion-body">
+                {faq.a}
+              </div>
             </div>
-            <h3 className="h5 mt-2">
-              Watch Time
-            </h3>
-            <p className="mb-0">
-              A recorded watch-time result with significant growth.
-            </p>
           </div>
-        </div>
-        <div className="col-md-4">
-          <div className="fr-card p-4 h-100">
-            <a className="result-media" data-lightbox="frizendo-results" data-title="Channel Views 414.7K" href="/assets/project-4.png">
-              <img alt="Channel analytics snapshot showing 414.7K views" src="/assets/project-4.png" />
-            </a>
-            <div className="display-6 text-primary fw-bold">
-              414.7K
-            </div>
-            <h3 className="h5 mt-2">
-              Channel Views
-            </h3>
-            <p className="mb-0">
-              A channel analytics snapshot showing broad audience reach.
-            </p>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div className="fr-card p-4 h-100">
-            <div className="display-6 text-primary fw-bold">
-              720.5 hrs
-            </div>
-            <h3 className="h5 mt-2">
-              Total Watch Time
-            </h3>
-            <p className="mb-0">
-              Combined watch time delivered across managed video projects.
-            </p>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div className="fr-card p-4 h-100">
-            <div className="display-6 text-primary fw-bold">
-              5+
-            </div>
-            <h3 className="h5 mt-2">
-              Countries Served
-            </h3>
-            <p className="mb-0">
-              Clients supported from Pakistan, the UK, USA, Australia and Hungary.
-            </p>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div className="fr-card p-4 h-100">
-            <div className="display-6 text-primary fw-bold">
-              6+
-            </div>
-            <h3 className="h5 mt-2">
-              Projects Delivered
-            </h3>
-            <p className="mb-0">
-              Campaigns, branding and social projects shipped for global clients.
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
       <div className="see-more-wrap">
-        <a className="btn btn-primary rounded-pill py-3 px-5" href="/results">
-          See More Results
+        <a className="btn btn-outline-primary rounded-pill py-3 px-5" href="/faq">
+          See All FAQs
         </a>
       </div>
     </div>
