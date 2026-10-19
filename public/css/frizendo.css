@@ -19,6 +19,7 @@ body{font-family:Roboto,Arial,sans-serif;color:var(--fr-body);background:#fff}
 .hero-frizendo .carousel-caption h1,.hero-frizendo .carousel-caption h2{font-weight:700;text-shadow:0 2px 4px rgba(0,0,0,.5)}
 .hero-frizendo .carousel-caption p{font-weight:400;line-height:1.6;text-shadow:0 2px 4px rgba(0,0,0,.5)}
 .hero-frizendo .hero-copy{padding-top:80px}
+.hero-frizendo .hero-brandline{position:absolute;top:0;left:0;right:0;z-index:3;margin:0;padding:18px 6% 46px;color:#fff;text-align:center;font-size:clamp(.9375rem,2.3vw,1.25rem);font-weight:700;letter-spacing:.01em;line-height:1.4;text-shadow:0 2px 6px rgba(0,0,0,.6);background:linear-gradient(to bottom,rgba(9,37,65,.8) 0%,rgba(9,37,65,.4) 60%,rgba(9,37,65,0) 100%);pointer-events:none}
 .hero-frizendo .carousel-item.active .hero-copy{animation:frHeroIn .8s ease .1s both}
 @keyframes frHeroIn{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-frizendo .carousel-item.active .hero-copy{animation:none}}
@@ -40,7 +41,7 @@ body{font-family:Roboto,Arial,sans-serif;color:var(--fr-body);background:#fff}
 .fr-cta{background:linear-gradient(135deg,var(--fr-blue),var(--fr-cyan),var(--fr-green));position:relative;overflow:hidden}.fr-cta:before{content:"";position:absolute;width:420px;height:180px;border:1px solid #ffffff44;border-radius:50%;left:-120px;top:-80px;transform:rotate(-15deg)}
 .footer-logo{height:48px;width:auto}.portfolio-link{display:block;padding:16px;border:1px solid #e5edf5;border-radius:var(--fr-r-sm);margin-bottom:12px;background:#fff;transition:.2s}.portfolio-link:hover{transform:translateY(-3px);box-shadow:0 12px 30px #09254110}
 @keyframes frMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-@media(max-width:991px){.review-item{width:300px;flex-basis:300px}.hero-frizendo .hero-copy{padding-top:24px}}
+@media(max-width:991px){.review-item{width:300px;flex-basis:300px}.hero-frizendo .hero-copy{padding-top:24px}.hero-frizendo .hero-brandline{padding:12px 16px 34px;font-size:.875rem}}
 @media(prefers-reduced-motion:reduce){.review-track{animation:none!important}}
 .page-head{background:#111;position:relative;padding:90px 0 70px}.page-head .section-kicker{color:var(--fr-cyan)}.page-head h1{color:#fff;font-weight:700}.page-head p.lead{color:var(--fr-on-dark);max-width:640px;margin:14px auto 0}.see-more-wrap{text-align:center;margin-top:36px}
 

@@ -102,8 +102,8 @@ export default function Page() {
       />
       <link rel="preload" as="image" href="/img/clients-img/hero-background.webp" type="image/webp" />
       <section className="container-fluid px-0 mb-5 hero-frizendo" id="home">
-    <h1 className="visually-hidden">
-      Frizendo — Digital Marketing Agency in Gilgit, Pakistan
+    <h1 className="hero-brandline">
+      Frizendo stands for Fresh Ideas, Real Results
     </h1>
     <div className="carousel slide" data-bs-interval={3000} data-bs-ride="carousel" id="header-carousel">
       <div className="carousel-inner">

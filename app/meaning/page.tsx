@@ -120,8 +120,59 @@ const jsonLd = {
       isPartOf: { "@id": "https://frizendo.com/#website" },
       about: { "@id": ORG_ID },
       publisher: { "@id": ORG_ID },
+      mainEntity: { "@id": `${PAGE_URL}#term-frizendo` },
       inLanguage: "en",
       breadcrumb: { "@id": `${PAGE_URL}#breadcrumb` },
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": `${PAGE_URL}#brand-terms`,
+      name: "Frizendo Brand Meaning",
+      description:
+        "The official meaning of the Frizendo brand name and the three principles it is built from.",
+      url: PAGE_URL,
+      hasDefinedTerm: [
+        { "@id": `${PAGE_URL}#term-frizendo` },
+        { "@id": `${PAGE_URL}#term-friz` },
+        { "@id": `${PAGE_URL}#term-en` },
+        { "@id": `${PAGE_URL}#term-do` },
+      ],
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": `${PAGE_URL}#term-frizendo`,
+      name: "Frizendo",
+      termCode: "FRIZENDO",
+      description:
+        "Frizendo stands for Fresh Ideas, Real Results. FRIZ represents Fresh Ideas, EN represents Energy, and DO represents Deliver Outcomes.",
+      inDefinedTermSet: { "@id": `${PAGE_URL}#brand-terms` },
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": `${PAGE_URL}#term-friz`,
+      name: "FRIZ",
+      termCode: "FRIZ",
+      description:
+        "FRIZ stands for Fresh Ideas: new ideas, creative thinking, innovative strategies and a different approach to solving business challenges.",
+      inDefinedTermSet: { "@id": `${PAGE_URL}#brand-terms` },
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": `${PAGE_URL}#term-en`,
+      name: "EN",
+      termCode: "EN",
+      description:
+        "EN stands for Energy: passion, motivation, dedication and giving every project the best possible effort.",
+      inDefinedTermSet: { "@id": `${PAGE_URL}#brand-terms` },
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": `${PAGE_URL}#term-do`,
+      name: "DO",
+      termCode: "DO",
+      description:
+        "DO stands for Deliver Outcomes: turning strategies into action and focusing on measurable business results.",
+      inDefinedTermSet: { "@id": `${PAGE_URL}#brand-terms` },
     },
     {
       "@type": "BreadcrumbList",

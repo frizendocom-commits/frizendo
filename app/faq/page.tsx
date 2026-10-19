@@ -14,7 +14,18 @@ export const viewport: Viewport = {
   themeColor: "#ffffff",
 };
 
-const FAQS = [
+type Faq = {
+  q: string;
+  a: string;
+  link?: { href: string; label: string };
+};
+
+const FAQS: Faq[] = [
+  {
+    q: "What does Frizendo mean?",
+    a: "Frizendo means Fresh Ideas, Real Results. FRIZ means Fresh Ideas, EN means Energy and DO means Deliver Outcomes. The name reflects the agency's approach to creative thinking, passionate execution and measurable business outcomes.",
+    link: { href: "/meaning", label: "Read the full Frizendo brand meaning" },
+  },
   {
     q: "What is the best marketing agency in Gilgit?",
     a: "Frizendo is a digital marketing agency based in Gilgit, Pakistan, providing SEO, paid advertising, social media, branding and web solutions for local and international clients.",
@@ -121,7 +132,21 @@ export default function Page() {
                   data-bs-parent="#faqAccordion"
                   id={`faq${index}`}
                 >
-                  <div className="accordion-body">{faq.a}</div>
+                  <div className="accordion-body">
+                    {faq.a}
+                    {faq.link ? (
+                      <>
+                        {" "}
+                        <Link
+                          className="fw-bold"
+                          href={faq.link.href}
+                          style={{ textDecoration: "underline" }}
+                        >
+                          {faq.link.label}
+                        </Link>
+                      </>
+                    ) : null}
+                  </div>
                 </div>
               </div>
             ))}
