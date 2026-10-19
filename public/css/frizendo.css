@@ -1282,3 +1282,14 @@ body{font-family:Roboto,Arial,sans-serif;color:var(--fr-body);background:#fff}
         margin-bottom: 8px;
     }
 }
+
+/* ---------- FAQ accordion: +/- toggle icon ---------- */
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23087cf7' stroke-width='2' stroke-linecap='round'%3e%3cpath d='M8 3.5v9M3.5 8h9'/%3e%3c/svg%3e");
+    transform: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23087cf7' stroke-width='2' stroke-linecap='round'%3e%3cpath d='M3.5 8h9'/%3e%3c/svg%3e");
+    transform: none;
+}
