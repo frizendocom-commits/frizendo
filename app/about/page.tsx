@@ -87,7 +87,10 @@ const jsonLd = {
       image: "https://frizendo.com/assets/frizendo-logo.png",
       description:
         "Digital marketing agency based in Gilgit, Gilgit-Baltistan, Pakistan, serving local and international clients with SEO, Google Ads, paid advertising, social media marketing, branding and web solutions.",
-      founder: { "@id": "https://frizendo.com/#amir-hassan" },
+      founder: [
+        { "@id": "https://frizendo.com/#amir-hassan" },
+        { "@id": "https://frizendo.com/#yasir-rahim" },
+      ],
       employee: [{ "@id": "https://frizendo.com/#yasir-rahim" }],
       areaServed: [
         "Gilgit",
@@ -149,14 +152,31 @@ const jsonLd = {
       "@type": "Person",
       "@id": "https://frizendo.com/#amir-hassan",
       name: "Amir Hassan",
+      givenName: "Amir",
+      familyName: "Hassan",
       jobTitle: "Founder",
+      description: "Amir Hassan is the founder of Frizendo, a digital marketing agency based in Gilgit, Pakistan.",
+      url: "https://frizendo.com/about",
       worksFor: { "@id": "https://frizendo.com/#organization" },
     },
     {
       "@type": "Person",
       "@id": "https://frizendo.com/#yasir-rahim",
       name: "Yasir Rahim",
+      givenName: "Yasir",
+      familyName: "Rahim",
+      alternateName: ["Yasir Rahim"],
       jobTitle: "Co-Founder",
+      description: "Yasir Rahim is the co-founder of Frizendo, a digital marketing agency based in Gilgit, Pakistan.",
+      url: "https://frizendo.com/about",
+      knowsAbout: [
+        "Digital Marketing",
+        "SEO",
+        "Paid Advertising",
+        "Social Media Marketing",
+        "Branding",
+        "Web Development",
+      ],
       worksFor: { "@id": "https://frizendo.com/#organization" },
     },
     {
