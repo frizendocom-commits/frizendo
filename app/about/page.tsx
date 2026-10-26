@@ -335,11 +335,11 @@ export default function Page() {
                 <h3 className="h4 mb-0">Amir Hassan</h3>
                 <span className="about-role">Founder of Frizendo</span>
                 <p>
-                  Amir Hassan is the founder of Frizendo. He leads the agency
-                  and works with the team to plan and deliver SEO, Google Ads,
-                  paid advertising, social media marketing, branding and web
-                  projects for clients in Gilgit, across Pakistan and in
-                  international markets.
+                  Amir Hassan is the Founder & CEO of Frizendo, a young
+                  entrepreneur and digital marketing strategist from Gilgit,
+                  Pakistan. He specializes in SEO, Google Ads, paid advertising,
+                  social media marketing, branding, and web development, helping
+                  businesses grow across Pakistan and international markets.
                 </p>
               </div>
             </div>
