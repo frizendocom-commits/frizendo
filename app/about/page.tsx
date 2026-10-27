@@ -89,9 +89,11 @@ const jsonLd = {
         "Digital marketing agency based in Gilgit, Gilgit-Baltistan, Pakistan, serving local and international clients with SEO, Google Ads, paid advertising, social media marketing, branding and web solutions.",
       founder: [
         { "@id": "https://frizendo.com/#amir-hassan" },
+      ],
+      employee: [
+        { "@id": "https://frizendo.com/#amir-hassan" },
         { "@id": "https://frizendo.com/#yasir-rahim" },
       ],
-      employee: [{ "@id": "https://frizendo.com/#yasir-rahim" }],
       areaServed: [
         "Gilgit",
         "Gilgit-Baltistan",
@@ -154,9 +156,8 @@ const jsonLd = {
       name: "Amir Hassan",
       givenName: "Amir",
       familyName: "Hassan",
-      jobTitle: "Founder",
-      description: "Amir Hassan is the founder of Frizendo, a digital marketing agency based in Gilgit, Pakistan.",
-      url: "https://frizendo.com/about",
+      jobTitle: ["Founder", "CEO"],
+      description: "Amir Hassan is the Founder and CEO of Frizendo, a digital marketing agency based in Gilgit, Pakistan.",
       worksFor: { "@id": "https://frizendo.com/#organization" },
     },
     {
