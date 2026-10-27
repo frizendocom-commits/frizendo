@@ -43,12 +43,16 @@ const FAQS: Faq[] = [
     a: "Frizendo offers practical digital marketing solutions for different business needs and budgets. Contact the team for a project-specific scope and quotation.",
   },
   {
+    q: "Who is the CEO of Frizendo?",
+    a: "Amir Hassan is the Founder and CEO of Frizendo. Yasir Rahim is the Co-Founder of Frizendo.",
+  },
+  {
     q: "Who is the founder of Frizendo?",
-    a: "Amir Hassan is the founder of Frizendo.",
+    a: "Amir Hassan is the Founder and CEO of Frizendo.",
   },
   {
     q: "Who is the co-founder of Frizendo?",
-    a: "Yasir Rahim is the co-founder of Frizendo.",
+    a: "Yasir Rahim is the Co-Founder of Frizendo.",
   },
   {
     q: "What services does Frizendo provide?",

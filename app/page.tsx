@@ -140,6 +140,10 @@ const HOME_FAQS: HomeFaq[] = [
     q: "How can I contact Frizendo?",
     a: "You can email frizendo.com@gmail.com, message +92 349 8901846 on WhatsApp, or use the contact page on this website.",
   },
+  {
+    q: "Who is the CEO of Frizendo?",
+    a: "Amir Hassan is the Founder and CEO of Frizendo. Yasir Rahim is the Co-Founder of Frizendo.",
+  },
 ];
 
 export default function Page() {
