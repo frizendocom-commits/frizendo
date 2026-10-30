@@ -333,16 +333,12 @@ export default function Page() {
           </div>
           <div className="row g-4 justify-content-center">
             <div className="col-md-6 col-lg-5">
-              <div className="about-profile">
-                <Image
-                  alt="Amir Hassan, Founder of Frizendo"
-                  className="about-photo"
-                  src="/img/clients-img/amir hassan founder.jpeg"
-                  width={1070}
-                  height={1070}
-                  sizes="128px"
-                  quality={80}
-                />
+              <a
+                className="about-profile"
+                href="https://www.mehakaura.com/"
+                rel="noopener"
+                target="_blank"
+              >
                 <h3 className="h4 mb-0">Amir Hassan</h3>
                 <span className="about-role">Founder of Frizendo</span>
                 <p>
@@ -352,19 +348,15 @@ export default function Page() {
                   social media marketing, branding, and web development, helping
                   businesses grow across Pakistan and international markets.
                 </p>
-              </div>
+              </a>
             </div>
             <div className="col-md-6 col-lg-5">
-              <div className="about-profile">
-                <Image
-                  alt="Yasir Rahim, Co-Founder of Frizendo"
-                  className="about-photo"
-                  src="/img/clients-img/yasir co founder .png"
-                  width={760}
-                  height={762}
-                  sizes="128px"
-                  quality={80}
-                />
+              <a
+                className="about-profile"
+                href="https://www.mehakaura.com/"
+                rel="noopener"
+                target="_blank"
+              >
                 <h3 className="h4 mb-0">Yasir Rahim</h3>
                 <span className="about-role">Co-Founder of Frizendo</span>
                 <p>
@@ -372,7 +364,7 @@ export default function Page() {
                   the founder to plan and deliver digital marketing projects for
                   local businesses and international clients.
                 </p>
-              </div>
+              </a>
             </div>
           </div>
         </div>

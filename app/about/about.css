@@ -98,13 +98,25 @@
 }
 
 .about-profile {
+  display: block;
   height: 100%;
   padding: 36px 30px;
+  color: inherit;
   text-align: center;
+  text-decoration: none;
   border: 1px solid #e5edf5;
   border-radius: var(--fr-r-md);
   background: #fff;
   box-shadow: 0 10px 35px rgba(9, 37, 65, 0.04);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.about-profile:hover,
+.about-profile:focus-visible {
+  color: inherit;
+  border-color: var(--fr-blue);
+  box-shadow: 0 14px 40px rgba(9, 37, 65, 0.12);
+  transform: translateY(-3px);
 }
 
 .about-avatar {

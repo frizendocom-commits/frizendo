@@ -135,7 +135,10 @@ export default function Footer() {
         </p>
 
         <p className="footer-dev">
-          Developed by Henzify
+          Developed by{" "}
+          <a href="https://muhammad-smoky.vercel.app" rel="noopener" target="_blank">
+            Muhammad Azizi
+          </a>
         </p>
       </div>
     </footer>
