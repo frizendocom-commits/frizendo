@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -6,7 +7,14 @@ export default function Footer() {
       <div className="footer-container">
         <div className="footer-brand">
           <Link className="footer-logo" href="/">
-            <img alt="Frizendo digital marketing agency logo" src="/assets/frizendo-logo.png" />
+            <Image
+              alt="Frizendo digital marketing agency logo"
+              src="/assets/frizendo-logo.png"
+              width={790}
+              height={658}
+              sizes="48px"
+              quality={80}
+            />
             <span>Frizendo</span>
           </Link>
 

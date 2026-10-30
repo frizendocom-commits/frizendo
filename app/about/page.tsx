@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { Viewport } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import "./about.css";
 
@@ -212,6 +213,15 @@ export default function Page() {
       />
 
       <section className="about-hero" id="about">
+        <Image
+          alt=""
+          className="about-hero-bg"
+          src="/img/clients-img/about-bg.jpg"
+          fill
+          sizes="100vw"
+          quality={75}
+          preload
+        />
         <div className="container">
           <p className="about-kicker">About Frizendo</p>
           <h1>About Frizendo — Digital Marketing Agency in Gilgit</h1>
@@ -324,14 +334,14 @@ export default function Page() {
           <div className="row g-4 justify-content-center">
             <div className="col-md-6 col-lg-5">
               <div className="about-profile">
-                <img
+                <Image
                   alt="Amir Hassan, Founder of Frizendo"
                   className="about-photo"
-                  decoding="async"
-                  height={128}
-                  loading="lazy"
-                  src="/img/clients-img/amir%20hassan%20founder.jpeg"
-                  width={128}
+                  src="/img/clients-img/amir hassan founder.jpeg"
+                  width={1070}
+                  height={1070}
+                  sizes="128px"
+                  quality={80}
                 />
                 <h3 className="h4 mb-0">Amir Hassan</h3>
                 <span className="about-role">Founder of Frizendo</span>
@@ -346,14 +356,14 @@ export default function Page() {
             </div>
             <div className="col-md-6 col-lg-5">
               <div className="about-profile">
-                <img
+                <Image
                   alt="Yasir Rahim, Co-Founder of Frizendo"
                   className="about-photo"
-                  decoding="async"
-                  height={128}
-                  loading="lazy"
-                  src="/img/clients-img/yasir%20co%20founder%20.png"
-                  width={128}
+                  src="/img/clients-img/yasir co founder .png"
+                  width={760}
+                  height={762}
+                  sizes="128px"
+                  quality={80}
                 />
                 <h3 className="h4 mb-0">Yasir Rahim</h3>
                 <span className="about-role">Co-Founder of Frizendo</span>

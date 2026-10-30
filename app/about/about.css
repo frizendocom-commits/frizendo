@@ -9,7 +9,13 @@
   overflow: hidden;
   padding: 92px 0 78px;
   color: #fff;
-  background: url("/img/clients-img/about-bg.jpg") center center / cover no-repeat;
+  background: var(--fr-dark);
+}
+
+.about-hero-bg {
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
 }
 
 .about-hero::after {

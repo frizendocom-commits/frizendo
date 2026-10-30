@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -21,7 +22,14 @@ export default function Header() {
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light p-lg-0">
           <Link className="navbar-brand" href="/">
-            <img alt="Frizendo digital marketing agency logo" src="/assets/frizendo-logo.png" />
+            <Image
+              alt="Frizendo digital marketing agency logo"
+              src="/assets/frizendo-logo.png"
+              width={790}
+              height={658}
+              sizes="48px"
+              quality={80}
+            />
             <span>Frizendo</span>
           </Link>
           <button

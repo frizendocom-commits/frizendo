@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { Viewport } from "next";
+import Image from "next/image";
 import ServicesSection from "@/components/ServicesSection";
 
 export const metadata: Metadata = {
@@ -155,7 +156,6 @@ export default function Page() {
           __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
         }}
       />
-      <link rel="preload" as="image" href="/img/clients-img/hero-background.webp" type="image/webp" />
       <section className="container-fluid px-0 mb-5 hero-frizendo" id="home">
     <h1 className="hero-brandline">
       Frizendo stands for Fresh Ideas, Real Results
@@ -163,10 +163,16 @@ export default function Page() {
     <div className="carousel slide" data-bs-interval={3000} data-bs-ride="carousel" id="header-carousel">
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <picture>
-            <source srcSet="/img/clients-img/hero-background.webp" type="image/webp" />
-            <img alt="Digital marketing strategy and growth" className="w-100 hero-img" src="/img/clients-img/hero-background.jpg" width={1920} height={1072} fetchPriority="high" decoding="async" />
-          </picture>
+          <Image
+            alt="Digital marketing strategy and growth"
+            className="w-100 hero-img"
+            src="/img/clients-img/hero-background.jpg"
+            width={1920}
+            height={1072}
+            sizes="100vw"
+            quality={80}
+            preload
+          />
           <div className="carousel-caption">
             <div className="container">
               <div className="row justify-content-start">
@@ -195,10 +201,17 @@ export default function Page() {
           </div>
         </div>
         <div className="carousel-item">
-          <picture>
-            <source srcSet="/img/clients-img/hero-background-2.webp" type="image/webp" />
-            <img alt="Performance marketing campaigns" className="w-100 hero-img" src="/img/clients-img/hero-background-2.jpg" width={1920} height={1072} fetchPriority="low" decoding="async" />
-          </picture>
+          <Image
+            alt="Performance marketing campaigns"
+            className="w-100 hero-img"
+            src="/img/clients-img/hero-background-2.jpg"
+            width={1920}
+            height={1072}
+            sizes="100vw"
+            quality={80}
+            loading="eager"
+            fetchPriority="low"
+          />
           <div className="carousel-caption">
             <div className="container">
               <div className="row justify-content-start">
@@ -289,7 +302,15 @@ export default function Page() {
     <div className="container">
       <div className="row g-5 align-items-center">
         <div className="col-lg-6">
-          <img alt="Frizendo digital marketing agency team" className="img-fluid fr-rounded" src="/img/clients-img/Frizendo%20about.png" />
+          <Image
+            alt="Frizendo digital marketing agency team"
+            className="img-fluid fr-rounded"
+            src="/img/clients-img/Frizendo about.png"
+            width={1254}
+            height={1254}
+            sizes="(max-width: 991px) 90vw, 45vw"
+            quality={75}
+          />
         </div>
         <div className="col-lg-6">
           <p className="section-kicker">
@@ -403,7 +424,15 @@ export default function Page() {
         <div className="col-6 col-md-4 col-lg-3">
           <div className="fr-client">
             <a className="fr-client-link" href="https://binaryhub.co/" rel="noopener" target="_blank">
-              <img alt="Binary Hub logo" className="fr-client-logo" src="/img/clients-img/logo-binary.jpg" />
+              <Image
+                alt="Binary Hub logo"
+                className="fr-client-logo"
+                src="/img/clients-img/logo-binary.jpg"
+                width={2720}
+                height={1568}
+                sizes="(max-width: 767px) 50vw, (max-width: 991px) 33vw, 25vw"
+                quality={80}
+              />
               Binary Hub
               <small>
                 Pakistan
@@ -414,7 +443,15 @@ export default function Page() {
         <div className="col-6 col-md-4 col-lg-3">
           <div className="fr-client">
             <a className="fr-client-link" href="https://automatedgateservices.com/" rel="noopener" target="_blank">
-              <img alt="Automated Gate Services Ltd logo" className="fr-client-logo" src="/img/clients-img/automated%20Gate%20services.jpg" />
+              <Image
+                alt="Automated Gate Services Ltd logo"
+                className="fr-client-logo"
+                src="/img/clients-img/automated Gate services.jpg"
+                width={2720}
+                height={1568}
+                sizes="(max-width: 767px) 50vw, (max-width: 991px) 33vw, 25vw"
+                quality={80}
+              />
               Automated Gate Services Ltd
               <small>
                 United Kingdom
@@ -425,7 +462,15 @@ export default function Page() {
         <div className="col-6 col-md-4 col-lg-3">
           <div className="fr-client">
             <a className="fr-client-link" href="https://www.facebook.com/frizendofahrdienstbrambor" rel="noopener" target="_blank">
-              <img alt="Transport Service Brambor logo" className="fr-client-logo" src="/img/clients-img/Transport%20Service%20Brambor.jpg" />
+              <Image
+                alt="Transport Service Brambor logo"
+                className="fr-client-logo"
+                src="/img/clients-img/Transport Service Brambor.jpg"
+                width={2720}
+                height={1568}
+                sizes="(max-width: 767px) 50vw, (max-width: 991px) 33vw, 25vw"
+                quality={80}
+              />
               Transport Service Brambor
               <small>
                 Hungary
@@ -436,7 +481,15 @@ export default function Page() {
         <div className="col-6 col-md-4 col-lg-3">
           <div className="fr-client">
             <a className="fr-client-link" href="https://jutech.co/mobile-development" rel="noopener" target="_blank">
-              <img alt="JuTech Singapore logo" className="fr-client-logo" src="/img/clients-img/JuTech%20Singapore.jpg" />
+              <Image
+                alt="JuTech Singapore logo"
+                className="fr-client-logo"
+                src="/img/clients-img/JuTech Singapore.jpg"
+                width={2720}
+                height={1568}
+                sizes="(max-width: 767px) 50vw, (max-width: 991px) 33vw, 25vw"
+                quality={80}
+              />
               JuTech Singapore
               <small>
                 Singapore
@@ -447,7 +500,15 @@ export default function Page() {
         <div className="col-6 col-md-4 col-lg-3">
           <div className="fr-client">
             <a className="fr-client-link" href="https://www.bni.com/" rel="noopener" target="_blank">
-              <img alt="BNI logo" className="fr-client-logo" src="/img/clients-img/BNI_logo.jpg" />
+              <Image
+                alt="BNI logo"
+                className="fr-client-logo"
+                src="/img/clients-img/BNI_logo.jpg"
+                width={2720}
+                height={1568}
+                sizes="(max-width: 767px) 50vw, (max-width: 991px) 33vw, 25vw"
+                quality={80}
+              />
               BNI
               <small>
                 USA
@@ -458,7 +519,15 @@ export default function Page() {
         <div className="col-6 col-md-4 col-lg-3">
           <div className="fr-client">
             <a className="fr-client-link" href="https://www.linkedin.com/company/evolve-cfo-online/posts/?feedView=all" rel="noopener" target="_blank">
-              <img alt="Evolve CFO Online logo" className="fr-client-logo" src="/img/clients-img/Evolve%20CFO%20Services%20Logo.jpg" />
+              <Image
+                alt="Evolve CFO Online logo"
+                className="fr-client-logo"
+                src="/img/clients-img/Evolve CFO Services Logo.jpg"
+                width={2720}
+                height={1568}
+                sizes="(max-width: 767px) 50vw, (max-width: 991px) 33vw, 25vw"
+                quality={80}
+              />
               Evolve CFO Online
               <small>
                 USA
@@ -469,7 +538,15 @@ export default function Page() {
         <div className="col-6 col-md-4 col-lg-3">
           <div className="fr-client">
             <a className="fr-client-link" href="https://hunzapurezza.com/" rel="noopener" target="_blank">
-              <img alt="Hunza Purezza logo" className="fr-client-logo" src="/img/clients-img/Hunza%20Purezza%20Orange%20Berry%20Emblem.jpg" />
+              <Image
+                alt="Hunza Purezza logo"
+                className="fr-client-logo"
+                src="/img/clients-img/Hunza Purezza Orange Berry Emblem.jpg"
+                width={2720}
+                height={1568}
+                sizes="(max-width: 767px) 50vw, (max-width: 991px) 33vw, 25vw"
+                quality={80}
+              />
               Hunza Purezza
               <small>
                 Pakistan
@@ -502,7 +579,15 @@ export default function Page() {
         <div className="col-md-6 col-lg-4">
           <div className="fr-card p-4">
             <a className="fr-client-link" href="https://www.linkedin.com/in/tomkradcliff/" rel="noopener" target="_blank">
-              <img alt="Tom Radcliff logo" className="fr-card-logo" src="/img/clients-img/Tom%20Radcliff.jpg" />
+              <Image
+                alt="Tom Radcliff logo"
+                className="fr-card-logo"
+                src="/img/clients-img/Tom Radcliff.jpg"
+                width={2752}
+                height={1536}
+                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                quality={80}
+              />
               <h3 className="h5">
                 Tom Radcliff</h3>
               <p className="text-primary fw-bold mb-2">
@@ -517,7 +602,15 @@ export default function Page() {
         <div className="col-md-6 col-lg-4">
           <div className="fr-card p-4">
             <a className="fr-client-link" href="https://www.linkedin.com/in/mjmagett/" rel="noopener" target="_blank">
-              <img alt="Marilyn J. Magett logo" className="fr-card-logo" src="/img/clients-img/Marilyn%20J.%20Magett.jpg" />
+              <Image
+                alt="Marilyn J. Magett logo"
+                className="fr-card-logo"
+                src="/img/clients-img/Marilyn J. Magett.jpg"
+                width={2752}
+                height={1536}
+                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                quality={80}
+              />
               <h3 className="h5">
                 Marilyn J. Magett</h3>
               <p className="text-primary fw-bold mb-2">
@@ -532,7 +625,15 @@ export default function Page() {
         <div className="col-md-6 col-lg-4">
           <div className="fr-card p-4">
             <a className="fr-client-link" href="https://www.instagram.com/frizendo/drhadleyleatherman/" rel="noopener" target="_blank">
-              <img alt="Dr. Hadley Leatherman, MD logo" className="fr-card-logo" src="/img/clients-img/Dr.%20Hadley%20Leatherman%2C%20MD.jpg" />
+              <Image
+                alt="Dr. Hadley Leatherman, MD logo"
+                className="fr-card-logo"
+                src="/img/clients-img/dr-hadley-leatherman-md.jpg"
+                width={2752}
+                height={1536}
+                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                quality={80}
+              />
               <h3 className="h5">
                 Dr. Hadley Leatherman, MD</h3>
               <p className="text-primary fw-bold mb-2">
@@ -547,7 +648,15 @@ export default function Page() {
         <div className="col-md-6 col-lg-4">
           <div className="fr-card p-4">
             <a className="fr-client-link" href="https://www.linkedin.com/in/ajaz-hussain-3549a4174/" rel="noopener" target="_blank">
-              <img alt="Ajaz Hussain logo" className="fr-card-logo" src="/img/clients-img/Ajaz%20Hussain.jpg" />
+              <Image
+                alt="Ajaz Hussain logo"
+                className="fr-card-logo"
+                src="/img/clients-img/Ajaz Hussain.jpg"
+                width={2752}
+                height={1536}
+                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                quality={80}
+              />
               <h3 className="h5">
                 Ajaz Hussain</h3>
               <p className="text-primary fw-bold mb-2">
@@ -562,7 +671,15 @@ export default function Page() {
         <div className="col-md-6 col-lg-4">
           <div className="fr-card p-4">
             <a className="fr-client-link" href="https://www.linkedin.com/in/sheemajehanzeb/" rel="noopener" target="_blank">
-              <img alt="Sheema Jehanzeb logo" className="fr-card-logo" src="/img/clients-img/Sheema%20Jehanzeb.jpg" />
+              <Image
+                alt="Sheema Jehanzeb logo"
+                className="fr-card-logo"
+                src="/img/clients-img/Sheema Jehanzeb.jpg"
+                width={2752}
+                height={1536}
+                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                quality={80}
+              />
               <h3 className="h5">
                 Sheema Jehanzeb</h3>
               <p className="text-primary fw-bold mb-2">
@@ -577,7 +694,15 @@ export default function Page() {
         <div className="col-md-6 col-lg-4">
           <div className="fr-card p-4">
             <a className="fr-client-link" href="https://www.linkedin.com/in/pmpriyanka/" rel="noopener" target="_blank">
-              <img alt="Priyanka Das logo" className="fr-card-logo" src="/img/clients-img/Priyanka%20Das.jpg" />
+              <Image
+                alt="Priyanka Das logo"
+                className="fr-card-logo"
+                src="/img/clients-img/Priyanka Das.jpg"
+                width={2752}
+                height={1536}
+                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                quality={80}
+              />
               <h3 className="h5">
                 Priyanka Das</h3>
               <p className="text-primary fw-bold mb-2">
@@ -614,7 +739,14 @@ export default function Page() {
         <div className="col-md-6 col-lg-4">
           <div className="fr-result">
             <a data-lightbox="frizendo-work" data-title="YouTube Analytics Growth" href="/assets/project-1.png">
-              <img alt="YouTube analytics showing 38.5K views from a Frizendo-managed project" src="/assets/project-1.png" />
+              <Image
+                alt="YouTube analytics showing 38.5K views from a Frizendo-managed project"
+                src="/assets/project-1.png"
+                width={1088}
+                height={629}
+                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                quality={80}
+              />
             </a>
             <div className="p-4">
               <small className="text-primary fw-bold">
@@ -631,7 +763,14 @@ export default function Page() {
         <div className="col-md-6 col-lg-4">
           <div className="fr-result">
             <a data-lightbox="frizendo-work" data-title="Watch Time Growth" href="/assets/project-2.png">
-              <img alt="YouTube watch time showing 48.4 hours and strong growth" src="/assets/project-2.png" />
+              <Image
+                alt="YouTube watch time showing 48.4 hours and strong growth"
+                src="/assets/project-2.png"
+                width={1163}
+                height={739}
+                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                quality={80}
+              />
             </a>
             <div className="p-4">
               <small className="text-primary fw-bold">
@@ -648,7 +787,14 @@ export default function Page() {
         <div className="col-md-6 col-lg-4">
           <div className="fr-result">
             <a data-lightbox="frizendo-work" data-title="Channel Performance" href="/assets/project-4.png">
-              <img alt="YouTube analytics showing 414.7K views, 720.5 watch hours and subscriber growth" src="/assets/project-4.png" />
+              <Image
+                alt="YouTube analytics showing 414.7K views, 720.5 watch hours and subscriber growth"
+                src="/assets/project-4.png"
+                width={1579}
+                height={706}
+                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                quality={80}
+              />
             </a>
             <div className="p-4">
               <small className="text-primary fw-bold">
@@ -665,7 +811,14 @@ export default function Page() {
         <div className="col-md-6 col-lg-4">
           <div className="fr-result">
             <a data-lightbox="frizendo-work" data-title="Dr. Hadley Leatherman, MD" href="/assets/dr-hadley-before-after.png">
-              <img alt="Before and after social media setup for Dr. Hadley Leatherman" src="/assets/dr-hadley-before-after.png" />
+              <Image
+                alt="Before and after social media setup for Dr. Hadley Leatherman"
+                src="/assets/dr-hadley-before-after.png"
+                width={1671}
+                height={941}
+                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                quality={80}
+              />
             </a>
             <div className="p-4">
               <small className="text-primary fw-bold">
@@ -682,7 +835,14 @@ export default function Page() {
         <div className="col-md-6 col-lg-4">
           <div className="fr-result">
             <a data-lightbox="frizendo-work" data-title="Farasat Ali & Nordex Hub" href="/assets/farasat-nordex.png">
-              <img alt="Professional branding and digital presence work" src="/assets/farasat-nordex.png" />
+              <Image
+                alt="Professional branding and digital presence work"
+                src="/assets/farasat-nordex.png"
+                width={717}
+                height={449}
+                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                quality={80}
+              />
             </a>
             <div className="p-4">
               <small className="text-primary fw-bold">
@@ -699,7 +859,14 @@ export default function Page() {
         <div className="col-md-6 col-lg-4">
           <div className="fr-result">
             <a data-lightbox="frizendo-work" data-title="Nordex Hub" href="/assets/nordex-hub.png">
-              <img alt="Nordex Hub digital profile and branding work" src="/assets/nordex-hub.png" />
+              <Image
+                alt="Nordex Hub digital profile and branding work"
+                src="/assets/nordex-hub.png"
+                width={726}
+                height={376}
+                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                quality={80}
+              />
             </a>
             <div className="p-4">
               <small className="text-primary fw-bold">

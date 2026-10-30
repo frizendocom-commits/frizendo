@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { Viewport } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://frizendo.com"),
@@ -33,7 +34,15 @@ export default function Page() {
         <div className="col-6 col-md-4 col-lg-3">
           <div className="fr-client">
             <a className="fr-client-link" href="https://automatedgateservices.com/" rel="noopener" target="_blank">
-              <img alt="Automated Gate Services Ltd logo" className="fr-client-logo" src="/img/clients-img/automated%20Gate%20services.jpg" />
+              <Image
+                alt="Automated Gate Services Ltd logo"
+                className="fr-client-logo"
+                src="/img/clients-img/automated Gate services.jpg"
+                width={2720}
+                height={1568}
+                sizes="(max-width: 767px) 50vw, (max-width: 991px) 33vw, 25vw"
+                quality={80}
+              />
               Automated Gate Services Ltd
               <small>
                 United Kingdom
@@ -44,7 +53,15 @@ export default function Page() {
         <div className="col-6 col-md-4 col-lg-3">
           <div className="fr-client">
             <a className="fr-client-link" href="https://www.facebook.com/frizendofahrdienstbrambor" rel="noopener" target="_blank">
-              <img alt="Transport Service Brambor logo" className="fr-client-logo" src="/img/clients-img/Transport%20Service%20Brambor.jpg" />
+              <Image
+                alt="Transport Service Brambor logo"
+                className="fr-client-logo"
+                src="/img/clients-img/Transport Service Brambor.jpg"
+                width={2720}
+                height={1568}
+                sizes="(max-width: 767px) 50vw, (max-width: 991px) 33vw, 25vw"
+                quality={80}
+              />
               Transport Service Brambor
               <small>
                 Hungary
@@ -55,7 +72,15 @@ export default function Page() {
         <div className="col-6 col-md-4 col-lg-3">
           <div className="fr-client">
             <a className="fr-client-link" href="https://jutech.co/mobile-development" rel="noopener" target="_blank">
-              <img alt="JuTech Singapore logo" className="fr-client-logo" src="/img/clients-img/JuTech%20Singapore.jpg" />
+              <Image
+                alt="JuTech Singapore logo"
+                className="fr-client-logo"
+                src="/img/clients-img/JuTech Singapore.jpg"
+                width={2720}
+                height={1568}
+                sizes="(max-width: 767px) 50vw, (max-width: 991px) 33vw, 25vw"
+                quality={80}
+              />
               JuTech Singapore
               <small>
                 Singapore
@@ -66,7 +91,15 @@ export default function Page() {
         <div className="col-6 col-md-4 col-lg-3">
           <div className="fr-client">
             <a className="fr-client-link" href="https://www.bni.com/" rel="noopener" target="_blank">
-              <img alt="BNI logo" className="fr-client-logo" src="/img/clients-img/BNI_logo.jpg" />
+              <Image
+                alt="BNI logo"
+                className="fr-client-logo"
+                src="/img/clients-img/BNI_logo.jpg"
+                width={2720}
+                height={1568}
+                sizes="(max-width: 767px) 50vw, (max-width: 991px) 33vw, 25vw"
+                quality={80}
+              />
               BNI
               <small>
                 International
@@ -77,7 +110,15 @@ export default function Page() {
         <div className="col-6 col-md-4 col-lg-3">
           <div className="fr-client">
             <a className="fr-client-link" href="https://binaryhub.co/" rel="noopener" target="_blank">
-              <img alt="Binary Hub logo" className="fr-client-logo" src="/img/clients-img/logo-binary.jpg" />
+              <Image
+                alt="Binary Hub logo"
+                className="fr-client-logo"
+                src="/img/clients-img/logo-binary.jpg"
+                width={2720}
+                height={1568}
+                sizes="(max-width: 767px) 50vw, (max-width: 991px) 33vw, 25vw"
+                quality={80}
+              />
               Binary Hub
               <small>
                 Pakistan
@@ -88,7 +129,15 @@ export default function Page() {
         <div className="col-6 col-md-4 col-lg-3">
           <div className="fr-client">
             <a className="fr-client-link" href="https://www.linkedin.com/company/evolve-cfo-online/posts/?feedView=all" rel="noopener" target="_blank">
-              <img alt="Evolve CFO Online logo" className="fr-client-logo" src="/img/clients-img/Evolve%20CFO%20Services%20Logo.jpg" />
+              <Image
+                alt="Evolve CFO Online logo"
+                className="fr-client-logo"
+                src="/img/clients-img/Evolve CFO Services Logo.jpg"
+                width={2720}
+                height={1568}
+                sizes="(max-width: 767px) 50vw, (max-width: 991px) 33vw, 25vw"
+                quality={80}
+              />
               Evolve CFO Online
               <small>
                 USA
@@ -99,7 +148,15 @@ export default function Page() {
         <div className="col-6 col-md-4 col-lg-3">
           <div className="fr-client">
             <a className="fr-client-link" href="https://hunzapurezza.com/" rel="noopener" target="_blank">
-              <img alt="Hunza Purezza logo" className="fr-client-logo" src="/img/clients-img/Hunza%20Purezza%20Orange%20Berry%20Emblem.jpg" />
+              <Image
+                alt="Hunza Purezza logo"
+                className="fr-client-logo"
+                src="/img/clients-img/Hunza Purezza Orange Berry Emblem.jpg"
+                width={2720}
+                height={1568}
+                sizes="(max-width: 767px) 50vw, (max-width: 991px) 33vw, 25vw"
+                quality={80}
+              />
               Hunza Purezza
               <small>
                 Pakistan
@@ -127,7 +184,15 @@ export default function Page() {
         <div className="col-md-6 col-lg-4">
           <div className="fr-card p-4">
             <a className="fr-client-link" href="https://www.linkedin.com/in/tomkradcliff/" rel="noopener" target="_blank">
-              <img alt="Tom Radcliff logo" className="fr-card-logo" src="/img/clients-img/Tom%20Radcliff.jpg" />
+              <Image
+                alt="Tom Radcliff logo"
+                className="fr-card-logo"
+                src="/img/clients-img/Tom Radcliff.jpg"
+                width={2752}
+                height={1536}
+                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                quality={80}
+              />
               <h3 className="h5">
                 Tom Radcliff</h3>
               <p className="text-primary fw-bold mb-2">
@@ -142,7 +207,15 @@ export default function Page() {
         <div className="col-md-6 col-lg-4">
           <div className="fr-card p-4">
             <a className="fr-client-link" href="https://www.linkedin.com/in/mjmagett/" rel="noopener" target="_blank">
-              <img alt="Marilyn J. Magett logo" className="fr-card-logo" src="/img/clients-img/Marilyn%20J.%20Magett.jpg" />
+              <Image
+                alt="Marilyn J. Magett logo"
+                className="fr-card-logo"
+                src="/img/clients-img/Marilyn J. Magett.jpg"
+                width={2752}
+                height={1536}
+                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                quality={80}
+              />
               <h3 className="h5">
                 Marilyn J. Magett</h3>
               <p className="text-primary fw-bold mb-2">
@@ -157,7 +230,15 @@ export default function Page() {
         <div className="col-md-6 col-lg-4">
           <div className="fr-card p-4">
             <a className="fr-client-link" href="https://www.instagram.com/frizendo/drhadleyleatherman/" rel="noopener" target="_blank">
-              <img alt="Dr. Hadley Leatherman, MD logo" className="fr-card-logo" src="/img/clients-img/Dr.%20Hadley%20Leatherman%2C%20MD.jpg" />
+              <Image
+                alt="Dr. Hadley Leatherman, MD logo"
+                className="fr-card-logo"
+                src="/img/clients-img/dr-hadley-leatherman-md.jpg"
+                width={2752}
+                height={1536}
+                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                quality={80}
+              />
               <h3 className="h5">
                 Dr. Hadley Leatherman, MD</h3>
               <p className="text-primary fw-bold mb-2">
@@ -172,7 +253,15 @@ export default function Page() {
         <div className="col-md-6 col-lg-4">
           <div className="fr-card p-4">
             <a className="fr-client-link" href="https://www.linkedin.com/in/ajaz-hussain-3549a4174/" rel="noopener" target="_blank">
-              <img alt="Ajaz Hussain logo" className="fr-card-logo" src="/img/clients-img/Ajaz%20Hussain.jpg" />
+              <Image
+                alt="Ajaz Hussain logo"
+                className="fr-card-logo"
+                src="/img/clients-img/Ajaz Hussain.jpg"
+                width={2752}
+                height={1536}
+                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                quality={80}
+              />
               <h3 className="h5">
                 Ajaz Hussain</h3>
               <p className="text-primary fw-bold mb-2">
@@ -187,7 +276,15 @@ export default function Page() {
         <div className="col-md-6 col-lg-4">
           <div className="fr-card p-4">
             <a className="fr-client-link" href="https://www.linkedin.com/in/sheemajehanzeb/" rel="noopener" target="_blank">
-              <img alt="Sheema Jehanzeb logo" className="fr-card-logo" src="/img/clients-img/Sheema%20Jehanzeb.jpg" />
+              <Image
+                alt="Sheema Jehanzeb logo"
+                className="fr-card-logo"
+                src="/img/clients-img/Sheema Jehanzeb.jpg"
+                width={2752}
+                height={1536}
+                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                quality={80}
+              />
               <h3 className="h5">
                 Sheema Jehanzeb</h3>
               <p className="text-primary fw-bold mb-2">
@@ -202,7 +299,15 @@ export default function Page() {
         <div className="col-md-6 col-lg-4">
           <div className="fr-card p-4">
             <a className="fr-client-link" href="https://www.linkedin.com/in/pmpriyanka/" rel="noopener" target="_blank">
-              <img alt="Priyanka Das logo" className="fr-card-logo" src="/img/clients-img/Priyanka%20Das.jpg" />
+              <Image
+                alt="Priyanka Das logo"
+                className="fr-card-logo"
+                src="/img/clients-img/Priyanka Das.jpg"
+                width={2752}
+                height={1536}
+                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                quality={80}
+              />
               <h3 className="h5">
                 Priyanka Das</h3>
               <p className="text-primary fw-bold mb-2">

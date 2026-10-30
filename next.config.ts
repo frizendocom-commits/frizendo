@@ -3,6 +3,11 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
+  images: {
+    formats: ["image/avif", "image/webp"],
+    qualities: [75, 80],
+    minimumCacheTTL: 2592000,
+  },
   async redirects() {
     return [
       { source: "/index.html", destination: "/", permanent: true },
